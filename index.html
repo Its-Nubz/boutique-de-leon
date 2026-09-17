@@ -12,14 +12,13 @@
 </head>
 <body>
   <header class="site-header">
-    <a class="wordmark" href="#home" aria-label="Boutique De Leon home"><span>BOUTIQUE</span><strong>DE LEON</strong></a>
+    <a class="wordmark logo-link" href="#home" aria-label="Boutique De Leon home"><img class="header-logo" src="BDL%20Logo.png" alt="Boutique De Leon — Luxury Within Reach"></a>
     <button class="menu-button" aria-label="Open menu" aria-expanded="false">☰</button>
     <nav class="nav"><a href="#collection">Collection</a><a href="#request">Request an Item</a><a href="#about">About</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav>
   </header>
   <main>
     <section class="hero" id="home">
-      <div class="hero-monogram" aria-hidden="true"><div class="monogram-letters">BDL</div><div class="lioness">♌</div></div>
-      <p class="eyebrow">BOUTIQUE DE LEON</p><h1>Luxury Within Reach.</h1>
+      <img class="hero-logo" src="BDL%20Logo.png" alt="Boutique De Leon — Luxury Within Reach">
       <p class="hero-copy">Discover a curated collection of luxury beauty, fragrance and more at exceptional prices. Browse online and inquire about local availability.</p>
       <div class="hero-actions"><a class="button gold" href="#collection">Explore the Collection</a><a class="button outline" href="#request">Request an Item</a></div>
       <p class="local-note">Browse online. Shop locally.</p>
@@ -42,7 +41,7 @@
     <section class="section faq" id="faq"><p class="eyebrow">FAQ</p><h2>A few things to know.</h2><details><summary>Can I purchase directly from the website?</summary><p>No. BoutiqueDeLeon.com is a catalog and inquiry site. Products are not purchased through online checkout.</p></details><details><summary>Does an item shown online guarantee availability?</summary><p>No. Inventory can change quickly. Please inquire to confirm current availability.</p></details><details><summary>Can I request an item that isn't listed?</summary><p>Yes. Use the Request an Item form to tell us what you're looking for.</p></details></section>
     <section class="section contact" id="contact"><p class="eyebrow">CONTACT</p><h2>See something you love?</h2><p>Send an inquiry and we'll confirm availability.</p><button class="button gold inquire" data-product="General inquiry">Inquire About Availability</button></section>
   </main>
-  <footer><div class="footer-mark">BOUTIQUE <strong>DE LEON</strong></div><p>Luxury Within Reach.</p><p class="small">© <span id="year"></span> Boutique De Leon. All rights reserved.</p></footer>
+  <footer><img class="footer-logo" src="BDL%20Logo.png" alt="Boutique De Leon"><p class="small">© <span id="year"></span> Boutique De Leon. All rights reserved.</p></footer>
   <dialog id="inquiryDialog"><button class="close" aria-label="Close">×</button><p class="eyebrow">BOUTIQUE DE LEON</p><h2>Product Inquiry</h2><form id="inquiryForm" class="form"><label>Item<input id="inquiryItem" name="item" type="text" readonly></label><label>Name<input name="name" type="text" required></label><label>Best way to contact you<input name="contact" type="text" required></label><label>Message<textarea name="message" rows="4" placeholder="I'm interested in this item. Is it currently available?"></textarea></label><button class="button gold" type="submit">Prepare Inquiry</button><p class="form-note">The live contact destination will be connected before launch.</p></form></dialog>
   <script src="script.js"></script>
 </body>
