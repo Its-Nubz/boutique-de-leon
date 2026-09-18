@@ -2,7 +2,7 @@
 // Verified against Below Zero's official product listing.
 (() => {
   const products = window.BDL_PRODUCTS || (window.BDL_PRODUCTS = []);
-  const name = "Timeless Age Defying Ritual Collection";
+  const name = "Timeless Age Defying Ritual Collection 6-Piece Set";
   const brand = "Below Zero";
   const existing = products.find(p => (p.name || "").toLowerCase() === name.toLowerCase() && (p.brand || "").toLowerCase() === brand.toLowerCase());
 
