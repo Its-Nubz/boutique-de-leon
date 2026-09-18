@@ -14,7 +14,7 @@
     categoryLabel: "Skincare / Set",
     categories: ["new", "skincare", "gifts"],
     status: "1 Available",
-    image: "images/products/secret-collagen-timeless-age-defying-ritual-collection.png",
+    image: "images/products/Below Zero Timeless Age Defying Ritual Collection.png",
     description: "Six-piece age-defying skincare ritual with Silken Milk Cleanser, Balancing Facial Toner, Finishing Cream, Refining Serum, Heat-Infused Mask, and Day & Night Veil Moisturizer."
   };
 
