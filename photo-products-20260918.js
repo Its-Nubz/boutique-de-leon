@@ -1,6 +1,6 @@
 window.BDL_PRODUCTS = window.BDL_PRODUCTS || [];
 window.BDL_PRODUCTS.unshift(
-  {brand:"ILIA",product:"Fullest Volumizing Mascara - Classic Black",size:"Full Size / 0.32 fl oz / 9.5 mL",retail:"$29",price:"$25",categoryLabel:"Makeup / Mascara",categories:["new","makeup"],status:"2 Available",image:"https://iliabeauty.com/cdn/shop/files/FullestVolumizingMascara_whiteBG.png?v=1758120352&width=640"},
-  {brand:"LA PRÉDIRÉ PRESTIGE PARIS",product:"La Belle Flawless Matte Liquid Foundation",size:"30 mL / 1 fl oz — Shade not visible in inventory photo",retail:"$160",price:"$35",categoryLabel:"Makeup / Foundation",categories:["new","makeup"],status:"2 Available",image:"https://di2ponv0v5otw.cloudfront.net/posts/2026/09/07/6a9ef7097aaa64562b2237bf/l_6a9ef740b55223b0018fb235.jpg"},
-  {brand:"PZ",product:"Arctic Essence Age-Defying Miracle Powder Serum",size:"1.7 fl oz",retail:"$900",price:"",categoryLabel:"Skincare / Serum",categories:["new","skincare"],status:"1 Available",image:"https://i.ebayimg.com/images/g/NVIAAeSwXMtqHHgI/s-l140.webp"}
+  {brand:"ILIA",product:"Fullest Volumizing Mascara - Classic Black",size:"Full Size / 0.32 fl oz / 9.5 mL",retail:"$29",price:"$25",categoryLabel:"Makeup / Mascara",categories:["new","makeup"],status:"2 Available",image:""},
+  {brand:"LA PRÉDIRÉ PRESTIGE PARIS",product:"La Belle Flawless Matte Liquid Foundation",size:"30 mL / 1 fl oz — Shade not visible in inventory photo",retail:"$160",price:"$35",categoryLabel:"Makeup / Foundation",categories:["new","makeup"],status:"2 Available",image:""},
+  {brand:"PZ",product:"Arctic Essence Age-Defying Miracle Powder Serum",size:"1.7 fl oz",retail:"$900",price:"",categoryLabel:"Skincare / Serum",categories:["new","skincare"],status:"1 Available",image:""}
 );
