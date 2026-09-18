@@ -5,14 +5,40 @@ document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>na
 
 const escapeHtml=value=>String(value??'').replace(/[&<>'"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]));
 const productGrid=document.getElementById('productGrid');
+const products=window.BDL_PRODUCTS||[];
+const productSearch=document.getElementById('productSearch');
+const clearSearch=document.getElementById('clearSearch');
+const searchResults=document.getElementById('searchResults');
+const noResults=document.getElementById('noResults');
+const filters=document.querySelectorAll('.filter');
+let activeFilter='all';
+
+function searchableText(product){
+  return [product.brand,product.product,product.size,product.categoryLabel,product.status,...product.categories].join(' ').toLocaleLowerCase();
+}
+
 function renderProducts(){
-  const products=window.BDL_PRODUCTS||[];
-  productGrid.innerHTML=products.map(p=>`<article class="product-card" data-category="${escapeHtml(p.categories.join(' '))}"><div class="product-image"><img src="${escapeHtml(p.image)}" alt="${escapeHtml(p.brand+' '+p.product)}"></div><div class="product-body"><p class="brand">${escapeHtml(p.brand)}</p><dl><div><dt>Product:</dt><dd>${escapeHtml(p.product)}</dd></div><div><dt>Size:</dt><dd>${escapeHtml(p.size)}</dd></div><div><dt>Retail:</dt><dd>${escapeHtml(p.retail)}</dd></div><div><dt>Boutique De Leon Price:</dt><dd>${escapeHtml(p.price)}</dd></div><div><dt>Category:</dt><dd>${escapeHtml(p.categoryLabel)}</dd></div><div><dt>Status:</dt><dd>${escapeHtml(p.status)}</dd></div></dl><button class="button card-button inquire" data-product="${escapeHtml(p.brand+' '+p.product)}">Inquire</button></div></article>`).join('');
+  const query=productSearch.value.trim().toLocaleLowerCase();
+  const matches=products.filter(product=>{
+    const matchesCategory=activeFilter==='all'||product.categories.includes(activeFilter);
+    const matchesSearch=!query||searchableText(product).includes(query);
+    return matchesCategory&&matchesSearch;
+  });
+  productGrid.innerHTML=matches.map(p=>`<article class="product-card" data-category="${escapeHtml(p.categories.join(' '))}"><div class="product-image"><img src="${escapeHtml(p.image)}" alt="${escapeHtml(p.brand+' '+p.product)}"></div><div class="product-body"><p class="brand">${escapeHtml(p.brand)}</p><dl><div><dt>Product:</dt><dd>${escapeHtml(p.product)}</dd></div><div><dt>Size:</dt><dd>${escapeHtml(p.size)}</dd></div><div><dt>Retail:</dt><dd>${escapeHtml(p.retail)}</dd></div><div><dt>Boutique De Leon Price:</dt><dd>${escapeHtml(p.price)}</dd></div><div><dt>Category:</dt><dd>${escapeHtml(p.categoryLabel)}</dd></div><div><dt>Status:</dt><dd>${escapeHtml(p.status)}</dd></div></dl><button class="button card-button inquire" data-product="${escapeHtml(p.brand+' '+p.product)}">Inquire</button></div></article>`).join('');
+  clearSearch.hidden=!query;
+  noResults.hidden=matches.length!==0;
+  searchResults.textContent=query||activeFilter!=='all'?`${matches.length} product${matches.length===1?'':'s'} found`:'';
 }
 renderProducts();
 
-const filters=document.querySelectorAll('.filter');
-filters.forEach(btn=>btn.addEventListener('click',()=>{filters.forEach(b=>b.classList.remove('active'));btn.classList.add('active');const f=btn.dataset.filter;document.querySelectorAll('.product-card').forEach(card=>card.classList.toggle('hidden',f!=='all'&&!card.dataset.category.split(' ').includes(f)))}));
+productSearch.addEventListener('input',renderProducts);
+clearSearch.addEventListener('click',()=>{productSearch.value='';productSearch.focus();renderProducts()});
+filters.forEach(btn=>btn.addEventListener('click',()=>{
+  filters.forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  activeFilter=btn.dataset.filter;
+  renderProducts();
+}));
 
 const dialog=document.getElementById('inquiryDialog');
 const item=document.getElementById('inquiryItem');
