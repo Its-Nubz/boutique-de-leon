@@ -10,8 +10,9 @@
     categoryLabel:"Skincare / Set",
     categories:["new","skincare","gifts"],
     status:"1 Available",
-    image:""
+    image:"Secret Collagen Timeless Age-defying Ritual Collection.png"
   };
-  const exists = existing.some(p => p.brand === addition.brand && p.product === addition.product);
-  if (!exists) window.BDL_PRODUCTS = [addition, ...existing];
+  const match = existing.find(p => p.brand === addition.brand && p.product === addition.product);
+  if (match) Object.assign(match, addition);
+  else window.BDL_PRODUCTS = [addition, ...existing];
 })();
