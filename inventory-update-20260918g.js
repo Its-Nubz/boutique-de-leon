@@ -11,6 +11,7 @@
     name,
     size: "6-Piece Skincare Set",
     retail: "$8,600",
+    price: "$350",
     category: "Skincare / Set",
     categories: ["new", "skincare", "gifts"],
     status: "1 Available",
