@@ -3,7 +3,7 @@
   const existing = window.BDL_PRODUCTS;
   const additions = [
     {brand:"BELOW ZERO SWISS",product:"Pink Diamond Divine Summit Cell Renewal Cream",size:"50 mL / 1.7 fl oz",retail:"$950",price:"$75",categoryLabel:"Skincare / Moisturizer",categories:["new","skincare"],status:"1 Available",image:"Below Zero Pink Diamond Divine Summit Hydrolyzed Collagen Cell-Renewal Cream.png"},
-    {brand:"BELOW ZERO SWISS",product:"Pink Diamond Hydrolyzed Collagen Cell-Renewal Thermal Mask",size:"50 mL",retail:"$900",price:"",categoryLabel:"Skincare / Face Mask",categories:["new","skincare"],status:"1 Available",image:""},
+    {brand:"BELOW ZERO SWISS",product:"Pink Diamond Hydrolyzed Collagen Cell-Renewal Thermal Mask",size:"50 mL",retail:"$900",price:"$75",categoryLabel:"Skincare / Face Mask",categories:["new","skincare"],status:"1 Available",image:"Below Zero Pink Diamond Divine Summit Hydrolyzed Collagen Cell-Renewal Thermal Mask.png"},
     {brand:"BELOW ZERO SWISS",product:"Pink Diamond Firm & Rejuvenate Collagen Overnight Threading Mask",size:"",retail:"",price:"",categoryLabel:"Skincare / Overnight Mask",categories:["new","skincare"],status:"1 Available",image:""},
     {brand:"BELOW ZERO SWISS",product:"Pink Diamond Radiant Essence",size:"",retail:"",price:"",categoryLabel:"Skincare / Essence",categories:["new","skincare"],status:"1 Available",image:""},
     {brand:"BELOW ZERO SWISS",product:"Pink Diamond Eye Serum",size:"",retail:"",price:"",categoryLabel:"Skincare / Eye Serum",categories:["new","skincare"],status:"1 Available",image:""},
