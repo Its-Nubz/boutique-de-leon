@@ -19,6 +19,8 @@
   if (adorePeelingGel) adorePeelingGel.price = "$75";
   const cocoagePeelingGel = find("COCOÀGE COSMETICS", "24K Cocoa Facial Peeling Gel");
   if (cocoagePeelingGel) cocoagePeelingGel.price = "$35";
+  const cocoageRococoNightCream = find("COCOÀGE COSMETICS", "24K Rich Rococo Night Cream");
+  if (cocoageRococoNightCream) cocoageRococoNightCream.price = "$65";
   const inventory = [
     {brand:"BELOW ZERO",product:"Glacier Ice Age Defying Cooling Cream & Serum",size:"30 mL / 1.0 fl oz",retail:"$500",price:"$75",categoryLabel:"Skincare / Cream & Serum",categories:["new","skincare"],status:"1 Available",image:"images/products/Below Zero Glacier Ice Age Defying Cooling Cream and Serum.webp"},
     {brand:"BELOW ZERO",product:"Glacier Ice Age Defying Cooling Cream",size:"",retail:"$1,000",price:"$75",categoryLabel:"Skincare / Moisturizer",categories:["new","skincare"],status:"1 Available",image:"images/products/Below Zero Glacier Ice Age Defying Cooling Cream.webp"},
