@@ -1,0 +1,18 @@
+(() => {
+  if (!Array.isArray(window.BDL_PRODUCTS)) return;
+  const descriptions = [
+    ["PRÉDIRÉ PARIS","Argan Oil Essential Care Ritual Set","A curated four-step skincare set designed to complement daily facial care with a balanced, refined approach. Centered around argan oil, the ritual focuses on comfort, nourishment-inspired textures and a smooth, polished skin feel."],
+    ["PRÉDIRÉ PARIS","Dead Sea Mud Purifying Ritual Set","A curated three-step skincare ritual inspired by mineral-rich Dead Sea mud. The set combines a cleansing mask, facial cleanser and lightweight facial lotion designed to complement one another as part of a balanced daily skincare routine."],
+    ["PRÉDIRÉ PARIS","24K Gold Intensive Care Ritual Set","A curated skincare collection centered around 24K gold as its signature element. The set brings together multiple care steps designed to complement a refined skincare routine with a focus on texture, comfort and a luxurious sensorial experience."],
+    ["LÁTOÜA MILLE","24H Moisture Renewal Day & Night Cream Set","A moisturizing duo developed to maintain softness and balance from morning to night. The Day Cream has a smooth, silky texture that absorbs easily for daytime comfort, while the richer Night Cream envelops the skin in moisture to help maintain suppleness and hydration while resting."],
+    ["PRÉDIRÉ PARIS","Age Defying 4 Step Intensive Cell Renewal Thermal Collection","A four-step age-defying skincare collection featuring a thermal mask, activator serum, cell-renewal finishing cream and ionic skincare infuser. The regimen is designed to address the appearance of fine lines, uneven tone, elasticity and firmness while cleansing and refining the skin."],
+    ["SECRET COLLAGEN","Timeless Age-Defying Ritual Collection","A six-piece age-defying skincare ritual featuring a Silken Milk Cleanser, Balancing Facial Toner, Finishing Cream, Refining Serum, Heat-Infused Mask and Day & Night Veil Moisturizer. The collection is designed as a complete routine spanning cleansing, conditioning, treatment and moisturizing steps."],
+    ["SECRET COLLAGEN","24K Gold Luxury Skincare Collection","A six-piece age-defying skincare ritual featuring a Silken Milk Cleanser, Balancing Facial Toner, Finishing Cream, Refining Serum, Heat-Infused Mask and Day & Night Veil Moisturizer, designed to work together through cleansing, conditioning, treatment and moisturizing steps."],
+    ["BELOW ZERO","Timeless Age Defying Ritual Collection 6-Piece Set","A six-piece age-defying skincare ritual featuring a Silken Milk Cleanser, Balancing Facial Toner, Finishing Cream, Refining Serum, Heat-Infused Mask and Day & Night Veil Moisturizer. The collection provides a structured routine from cleansing and toning through serum, mask and moisturizing care."],
+    ["BELOW ZERO","Glacier Ice Age Defying Cooling Cream & Serum","A professional-grade age-defying skincare duo infused with glacial water. The Cooling Cream provides intensive hydration and nourishment while helping reduce the appearance of fine lines and wrinkles, while the Cooling Serum delivers antioxidants and skin-firming ingredients to support elasticity and a smoother, firmer-looking texture. Together, they help even the appearance of skin tone and restore a revitalized, radiant look."]
+  ];
+  for (const [brand, product, description] of descriptions) {
+    const item = window.BDL_PRODUCTS.find(p => p.brand === brand && p.product === product);
+    if (item) item.description = description;
+  }
+})();
