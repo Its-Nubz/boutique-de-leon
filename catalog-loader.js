@@ -13,6 +13,7 @@
     "cosmetics-fix-20260918.js",
     "image-policy.js",
     "product-descriptions.js",
+    "skincare-descriptions.js",
     "script.js"
   ];
 
