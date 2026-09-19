@@ -12,6 +12,7 @@
   const adoreMilk = find("ADORE COSMETICS", "Essence Facial Milk");
   if (adoreMilk) adoreMilk.status = "1 Available";
   const inventory = [
+    {brand:"BELOW ZERO",product:"Glacier Ice Age Defying Cooling Cream & Serum",size:"30 mL / 1.0 fl oz",retail:"$500",price:"",categoryLabel:"Skincare / Cream & Serum",categories:["new","skincare"],status:"1 Available",image:"images/products/Below Zero Glacier Ice Age Defying Cooling Cream and Serum.webp"},
     {brand:"BELOW ZERO",product:"Glacier Ice Age Defying Cooling Cream",size:"",retail:"$1,000",price:"",categoryLabel:"Skincare / Moisturizer",categories:["new","skincare"],status:"1 Available",image:"images/products/Below Zero Glacier Ice Age Defying Cooling Cream.webp"},
     {brand:"BELOW ZERO",product:"Glacier Ice Age Defying Oil Control Firming & Tightening Peeling Mask",size:"",retail:"$1,900",price:"",categoryLabel:"Skincare / Peel-Off Mask",categories:["new","skincare"],status:"1 Available",image:"images/products/Below Zero Glacier Age Defying Oil Control Firming and Tightening Peeling Mask.webp"},
     {brand:"BELOW ZERO",product:"Glacier Ice Age Defying Cooling Serum",size:"50 mL / 1.7 fl oz",retail:"$950",price:"",categoryLabel:"Skincare / Serum",categories:["new","skincare"],status:"1 Available",image:"images/products/Below Zero Glacier Ice Age Defying Cooling Serum.webp"},
@@ -58,7 +59,12 @@
     {brand:"CELLAbeauti",product:"PDRN Ampoule — Collagen",size:"",retail:"",price:"",categoryLabel:"Skincare / Ampoule",categories:["new","skincare"],status:"1 Available",image:""},
     {brand:"BELOW ZERO",product:"Timeless Age Defying Ritual Collection 6-Piece Set",size:"6-Piece Skincare Set",retail:"$8,600",price:"$350",categoryLabel:"Skincare / Set",categories:["new","skincare","gifts"],status:"1 Available",image:"images/products/Below Zero Timeless Age Defying Ritual Collection.png"},
     {brand:"ILIA",product:"Fullest Volumizing Mascara - Classic Black",size:"0.32 fl oz / 9.5 mL",retail:"$29",price:"$25",categoryLabel:"Cosmetics / Mascara",categories:["new","makeup","cosmetics"],status:"2 Available",image:"images/products/Ilia fullest volumizing mascara.webp"},
-    {brand:"LA PRÉDIRÉ PRESTIGE PARIS",product:"La Belle Flawless Matte Liquid Foundation",size:"30 mL / 1 fl oz",retail:"$160",price:"$35",categoryLabel:"Cosmetics / Foundation",categories:["new","makeup","cosmetics"],status:"2 Available",image:"images/products/la prestige flawless matte foundation.webp"}
+    {brand:"LA PRÉDIRÉ PRESTIGE PARIS",product:"La Belle Flawless Matte Liquid Foundation",size:"30 mL / 1 fl oz",retail:"$160",price:"$35",categoryLabel:"Cosmetics / Foundation",categories:["new","makeup","cosmetics"],status:"2 Available",image:"images/products/La Belle flawless matte liquid foundation.webp"}
   ];
-  for (const entry of inventory) { const { aliases = [], ...item } = entry; upsert(item, aliases); }
+  for (const item of inventory) {
+    const aliases = item.aliases || [];
+    const cleanItem = {...item};
+    delete cleanItem.aliases;
+    upsert(cleanItem, aliases);
+  }
 })();
