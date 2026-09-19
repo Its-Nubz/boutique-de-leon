@@ -32,7 +32,7 @@
     {brand:"PRÉDIRÉ PARIS",product:"Daily Defence Vitamin C Brightening Dropper",size:"30 mL / 1 fl oz",retail:"$299.99",price:"",categoryLabel:"Skincare / Serum",categories:["new","skincare"],status:"1 Available",image:""},
     {brand:"PRÉDIRÉ PARIS",product:"24K Gold Intensive Care Ritual Set",size:"4-Piece Skincare Set + 5 Pairs Eye Mask Pads",retail:"$269.99",price:"",categoryLabel:"Skincare / Set",categories:["new","skincare","gifts"],status:"1 Available",image:""},
 
-    {brand:"ROYALE",product:"Flawless Magic Oil Hair Serum",size:"120 mL / 4.05 fl oz",retail:"$250",price:"",categoryLabel:"Hair / Serum",categories:["new","hair"],status:"1 Available",image:""},
+    {brand:"ROYALE",product:"Flawless Magic Oil Hair Serum",size:"120 mL / 4.05 fl oz",retail:"$250",price:"",categoryLabel:"Hair / Serum",categories:["new","hair"],status:"1 Available",image:"images/products/Royale flawless magic oil hair serum.webp"},
     {brand:"ROYALE",product:"5 IN 1 Hair Mask",size:"200 g / 7.05 oz",retail:"$75",price:"",categoryLabel:"Hair / Mask",categories:["new","hair"],status:"1 Available",image:"images/products/Royale 5 in 1 hair mask.webp"},
     {brand:"ROYALE",product:"Royale Rescue Revitalizing Shampoo",size:"250 mL / 8.45 fl oz",retail:"$75",price:"",categoryLabel:"Hair / Shampoo",categories:["new","hair"],status:"1 Available",image:"images/products/Royale Rescue Revitalizing shampoo.webp"},
     {brand:"ROYALE",product:"Brilliant Gloss & Humidity Shield Mist",size:"",retail:"$150",price:"",categoryLabel:"Hair / Styling Mist",categories:["new","hair"],status:"1 Available",image:"images/products/ROYALE-Brilliant Gloss&Humidity Shield Mist.webp"},
