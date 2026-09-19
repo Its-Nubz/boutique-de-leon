@@ -32,6 +32,7 @@
     ["ROYALE","Royale Rescue Revitalizing Shampoo","A rich cleansing shampoo formulated with botanical extracts and nourishing oils. Its lather gently purifies the hair while supporting a refreshed, revitalized feel and leaving behind a floral-inspired fragrance."],
     ["ROYALE","Brilliant Gloss & Humidity Shield Mist","A lightweight finishing mist designed to give hair an instant polished appearance with a soft, luminous glow. Its humidity-resistant formula helps support smoothness and light reflection while preserving the hair's natural movement."],
     ["ROYALE","Hair Rescue Repair Essence Mist","A lightweight repair mist combining conditioning oils and keratin to help restore softness to dry or styled hair. It leaves a silky finish without weighing strands down, helping hair feel refreshed and easier to manage."],
+    ["ROYALE","Multi-Purpose Ceramic Hair Brush - Rose Gold","A heated ceramic styling brush designed to straighten hair quickly while helping seal the cuticle and retain moisture. Far-infrared, negative-ion and nano technologies complement the 100% ceramic straightening surface, with adjustable professional heat from 250°F to 450°F, a heat-resistant guard and a 360° swivel cord for easier styling. Dual voltage 110V-240V and suitable for all hair types."],
     ["BELOW ZERO","Frozen Gold Multi-Vitamin Magnetic Mud Mask",""],
     ["BELOW ZERO","Frozen Gold Firming & Tightening Peeling Mask with Multi-Peptide & Caffeine",""]
   ];
