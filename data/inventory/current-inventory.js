@@ -23,6 +23,14 @@
   if (cocoageRococoNightCream) cocoageRococoNightCream.price = "$65";
   const cocoageChocoLite = find("COCOÀGE COSMETICS", "Choco-Lite 24K Hydrating Cream for Oily Skin");
   if (cocoageChocoLite) cocoageChocoLite.price = "$65";
+  const cocoageCaffeineEyeSerum = find("COCOÀGE COSMETICS", "Concentrated 24K Caffeine Eye Serum");
+  if (cocoageCaffeineEyeSerum) cocoageCaffeineEyeSerum.price = "$50";
+  const cocoageDelightEyeCream = find("COCOÀGE COSMETICS", "Delight Caffeine 24K Eye Cream");
+  if (cocoageDelightEyeCream) cocoageDelightEyeCream.price = "$50";
+  const cocoageExtraShot = find("COCOÀGE COSMETICS", "Extra Shot 24K Non-Surgical Eye Applicator");
+  if (cocoageExtraShot) cocoageExtraShot.price = "$65";
+  const cocoageHotTemp = find("COCOÀGE COSMETICS", "HOT TEMP Intense 24K Anti-Wrinkle Cream");
+  if (cocoageHotTemp) cocoageHotTemp.price = "$65";
   const inventory = [
     {brand:"BELOW ZERO",product:"Glacier Ice Age Defying Cooling Cream & Serum",size:"30 mL / 1.0 fl oz",retail:"$500",price:"$75",categoryLabel:"Skincare / Cream & Serum",categories:["new","skincare"],status:"1 Available",image:"images/products/Below Zero Glacier Ice Age Defying Cooling Cream and Serum.webp"},
     {brand:"BELOW ZERO",product:"Glacier Ice Age Defying Cooling Cream",size:"",retail:"$1,000",price:"$75",categoryLabel:"Skincare / Moisturizer",categories:["new","skincare"],status:"1 Available",image:"images/products/Below Zero Glacier Ice Age Defying Cooling Cream.webp"},
