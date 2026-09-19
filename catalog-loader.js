@@ -3,7 +3,7 @@
 (() => {
   const catalogFiles = [
     "products.js",
-    "photo-products-20260918.js",
+    "data/inventory/photo-products.js",
     "inventory-update-20260918b.js",
     "inventory-update-20260918c.js",
     "inventory-update-20260918d.js",
