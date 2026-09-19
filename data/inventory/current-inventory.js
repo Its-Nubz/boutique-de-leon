@@ -11,6 +11,8 @@
   };
   const adoreMilk = find("ADORE COSMETICS", "Essence Facial Milk");
   if (adoreMilk) adoreMilk.status = "1 Available";
+  const adoreCellmax = find("ADORE COSMETICS", "CELLMAX Redefining Facial Cream");
+  if (adoreCellmax) adoreCellmax.price = "$100";
   const inventory = [
     {brand:"BELOW ZERO",product:"Glacier Ice Age Defying Cooling Cream & Serum",size:"30 mL / 1.0 fl oz",retail:"$500",price:"",categoryLabel:"Skincare / Cream & Serum",categories:["new","skincare"],status:"1 Available",image:"images/products/Below Zero Glacier Ice Age Defying Cooling Cream and Serum.webp"},
     {brand:"BELOW ZERO",product:"Glacier Ice Age Defying Cooling Cream",size:"",retail:"$1,000",price:"",categoryLabel:"Skincare / Moisturizer",categories:["new","skincare"],status:"1 Available",image:"images/products/Below Zero Glacier Ice Age Defying Cooling Cream.webp"},
