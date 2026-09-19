@@ -21,7 +21,7 @@
   if (adoreMilk) adoreMilk.status = "1 Available";
 
   const inventory = [
-    {brand:"PZ",product:"Arctic Essence Age-Defying Miracle Powder Serum",size:"1.7 fl oz",retail:"$900",price:"",categoryLabel:"Skincare / Serum",categories:["new","skincare"],status:"1 Available",image:""},
+    {brand:"BELOW ZERO",product:"Arctic Essence Age-Defying Miracle Powder Serum",size:"1.7 fl oz",retail:"$900",price:"",categoryLabel:"Skincare / Serum",categories:["new","skincare"],status:"1 Available",image:"",aliases:[["PZ","Arctic Essence Age-Defying Miracle Powder Serum"]]},
 
     {brand:"LÁTOÜA MILLE",product:"Serene English Pear & Freesia Body & Hair Fragrance",size:"",retail:"$249.99",price:"",categoryLabel:"Fragrance / Body & Hair Mist",categories:["new","fragrance"],status:"1 Available",image:"images/products/Latoua Mille Serene English pear&Freesia.webp"},
     {brand:"LÁTOÜA MILLE",product:"Still Rose Body & Hair Fragrance Mist",size:"",retail:"$249.99",price:"",categoryLabel:"Fragrance / Body & Hair Mist",categories:["new","fragrance"],status:"1 Available",image:"images/products/Latoua mille still rose.webp"},
