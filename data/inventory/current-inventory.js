@@ -53,18 +53,13 @@
     {brand:"ELIYA SKIN",product:"Skin Nourish Mask - Infused with Coral Grass & Green Algae Extracts",size:"100 mL / 3.4 fl oz",retail:"$299.99",price:"$65",categoryLabel:"Skincare / Face Mask",categories:["new","skincare"],status:"1 Available",image:"Eliya skin Skin Nourish Mask - Infused with Coral Grass & Green Algae Extracts.png"},
     {brand:"M. MICALLEF",product:"Royal Vintage Eau de Parfum",size:"100 mL / 3.3 fl oz",retail:"",price:"",categoryLabel:"Fragrance / Eau de Parfum",categories:["new","fragrance"],status:"1 Available",image:""},
     {brand:"M. MICALLEF",product:"Mon Parfum Cristal Eau de Parfum",size:"",retail:"",price:"",categoryLabel:"Fragrance / Eau de Parfum",categories:["new","fragrance"],status:"1 Available",image:""},
-    {brand:"M. MICALLEF",product:"Ylang in Gold Eau de Parfum",size:"",retail:"",price:"",categoryLabel:"Fragrance / Eau de Parfum",categories:["new","fragrance"],status:"1 Available",image:""},
+    {brand:"M. MICALLEF",product:"Ylang in Gold Eau de Parfum",size:"100 mL",retail:"€245",price:"",categoryLabel:"Fragrance / Eau de Parfum",categories:["new","fragrance"],status:"1 Available",image:"images/products/M. Micallef Ylang In Gold.webp"},
     {brand:"CELLAbeauti",product:"PDRN Solution Salmon Ampoule",size:"35 mL / 1.18 fl oz",retail:"",price:"$35",categoryLabel:"Skincare / Ampoule",categories:["new","skincare"],status:"1 Available",image:"images/products/cellabeauti-pdrn-salmon-ampoule.jpg"},
     {brand:"CELLAbeauti",product:"PDRN Ampoule — Cica",size:"",retail:"",price:"$35",categoryLabel:"Skincare / Ampoule",categories:["new","skincare"],status:"1 Available",image:"Cellabeauti PDRN ampoule-cica.png"},
     {brand:"CELLAbeauti",product:"PDRN Ampoule — Collagen",size:"",retail:"",price:"",categoryLabel:"Skincare / Ampoule",categories:["new","skincare"],status:"1 Available",image:""},
     {brand:"BELOW ZERO",product:"Timeless Age Defying Ritual Collection 6-Piece Set",size:"6-Piece Skincare Set",retail:"$8,600",price:"$350",categoryLabel:"Skincare / Set",categories:["new","skincare","gifts"],status:"1 Available",image:"images/products/Below Zero Timeless Age Defying Ritual Collection.png"},
-    {brand:"ILIA",product:"Fullest Volumizing Mascara - Classic Black",size:"0.32 fl oz / 9.5 mL",retail:"$29",price:"$25",categoryLabel:"Cosmetics / Mascara",categories:["new","makeup","cosmetics"],status:"2 Available",image:"images/products/Ilia fullest volumizing mascara.webp"},
-    {brand:"LA PRÉDIRÉ PRESTIGE PARIS",product:"La Belle Flawless Matte Liquid Foundation",size:"30 mL / 1 fl oz",retail:"$160",price:"$35",categoryLabel:"Cosmetics / Foundation",categories:["new","makeup","cosmetics"],status:"2 Available",image:"images/products/La Belle flawless matte liquid foundation.webp"}
+    {brand:"ILIA",product:"Fullest Volumizing Mascara - Classic Black",size:"0.32 fl oz / 9.5 mL",retail:"$29",price:"$25",categoryLabel:"Cosmetics / Mascara",categories:["new","cosmetics","makeup"],status:"2 Available",image:"images/products/ilia-fullest-volumizing-mascara-classic-black.jpg"},
+    {brand:"LA PRÉDIRÉ PRESTIGE PARIS",product:"La Belle Flawless Matte Liquid Foundation",size:"30 mL / 1 fl oz",retail:"$160",price:"$35",categoryLabel:"Cosmetics / Foundation",categories:["new","cosmetics","makeup"],status:"2 Available",image:"images/products/la-predire-la-belle-flawless-matte-foundation.jpg"}
   ];
-  for (const item of inventory) {
-    const aliases = item.aliases || [];
-    const cleanItem = {...item};
-    delete cleanItem.aliases;
-    upsert(cleanItem, aliases);
-  }
+  for (const item of inventory) upsert(item, item.aliases || []);
 })();
