@@ -1,5 +1,5 @@
 // Loads the Boutique De Leon catalog in a fixed order and always requests the current files.
-// Add future inventory files to this list; no manual ?v= version bumps are needed.
+// Product data loads first, then category descriptions, then the storefront renderer.
 (() => {
   const catalogFiles = [
     "products.js",
@@ -12,11 +12,11 @@
     "inventory-update-20260918g.js",
     "cosmetics-fix-20260918.js",
     "image-policy.js",
-    "cosmetics-descriptions.js",
-    "skincare-descriptions.js",
-    "fragrance-descriptions.js",
-    "hair-descriptions.js",
-    "sets-descriptions.js",
+    "data/descriptions/cosmetics.js",
+    "data/descriptions/skincare.js",
+    "data/descriptions/fragrance.js",
+    "data/descriptions/hair.js",
+    "data/descriptions/sets.js",
     "script.js"
   ];
 
