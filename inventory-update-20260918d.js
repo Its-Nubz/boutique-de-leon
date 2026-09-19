@@ -5,7 +5,7 @@
     brand:"SECRET COLLAGEN",
     product:"24K Gold Luxury Skincare Collection",
     size:"6-Piece Skincare Collection",
-    retail:"",
+    retail:"$6,800",
     price:"",
     categoryLabel:"Skincare / Set",
     categories:["new","skincare","gifts"],
