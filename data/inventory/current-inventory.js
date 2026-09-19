@@ -10,7 +10,7 @@
     if (match) Object.assign(match, item); else products.unshift(item);
   };
   const adoreMilk = find("ADORE COSMETICS", "Essence Facial Milk");
-  if (adoreMilk) adoreMilk.status = "1 Available";
+  if (adoreMilk) { adoreMilk.status = "1 Available"; adoreMilk.price = "$50"; }
   const adoreCellmax = find("ADORE COSMETICS", "CELLMAX Redefining Facial Cream");
   if (adoreCellmax) adoreCellmax.price = "$100";
   const adoreHydratingCream = find("ADORE COSMETICS", "Essence Facial Hydrating Cream - All Skin Types");
