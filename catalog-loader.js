@@ -12,6 +12,7 @@
     "inventory-update-20260918g.js",
     "cosmetics-fix-20260918.js",
     "image-policy.js",
+    "product-descriptions.js",
     "script.js"
   ];
 
