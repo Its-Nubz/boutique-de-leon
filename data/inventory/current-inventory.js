@@ -23,6 +23,8 @@
   const inventory = [
     {brand:"PZ",product:"Arctic Essence Age-Defying Miracle Powder Serum",size:"1.7 fl oz",retail:"$900",price:"",categoryLabel:"Skincare / Serum",categories:["new","skincare"],status:"1 Available",image:""},
 
+    {brand:"LÁTOÜA MILLE",product:"Serene English Pear & Freesia Body & Hair Fragrance",size:"",retail:"$249.99",price:"",categoryLabel:"Fragrance / Body & Hair Mist",categories:["new","fragrance"],status:"1 Available",image:"images/products/Latoua Mille Serene English pear&Freesia.webp"},
+
     {brand:"PRÉDIRÉ PARIS",product:"Vitamin C & E Booster Facial Toner",size:"250 mL / 8.45 fl oz",retail:"$165",price:"$65",categoryLabel:"Skincare / Toner",categories:["new","skincare"],status:"1 Available",image:"images/products/Predire Paris Vitamin C & E Booster Facial Toner.png"},
     {brand:"BELOW ZERO",product:"Frozen Gold Multi-Vitamin Magnetic Mud Mask",size:"50 mL / 1.7 fl oz",retail:"$950",price:"$85",categoryLabel:"Skincare / Face Mask",categories:["new","skincare"],status:"1 Available",image:"images/products/below zero Multi-Vitamin Magnetic Mud Mask.png"},
     {brand:"BELOW ZERO",product:"Frozen Gold Firming & Tightening Peeling Mask with Multi-Peptide & Caffeine",size:"100 g / 3.53 fl oz",retail:"$3,750",price:"$85",categoryLabel:"Skincare / Peel-Off Mask",categories:["new","skincare"],status:"1 Available",image:"images/products/Below Zero Frozen Gold - Firming & Tightening Below Zero Peeling Mask enriched with Multi-Peptide & Caffeine.png"},
