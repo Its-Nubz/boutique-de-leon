@@ -13,7 +13,7 @@ const noResults=document.getElementById('noResults');
 const filters=document.querySelectorAll('.filter');
 let activeFilter=null;
 
-function searchableText(product){return [product.brand,product.product,product.size,product.categoryLabel,product.status,...product.categories].join(' ').toLocaleLowerCase()}
+function searchableText(product){return [product.brand,product.product,product.size,product.categoryLabel,product.status,product.description,...product.categories].join(' ').toLocaleLowerCase()}
 function productImageMarkup(p){
   const label=escapeHtml(`${p.brand} ${p.product}`);
   if(!p.image)return `<div class="product-image-placeholder"><span>IMAGE COMING SOON</span></div>`;
@@ -23,7 +23,7 @@ function renderProducts(){
   const query=productSearch.value.trim().toLocaleLowerCase();
   if(!activeFilter&&!query){productGrid.innerHTML='';noResults.hidden=true;searchResults.textContent='Choose a collection above to view products.';clearSearch.hidden=true;return}
   const matches=products.filter(product=>{const matchesCategory=!activeFilter||product.categories.includes(activeFilter);const matchesSearch=!query||searchableText(product).includes(query);return matchesCategory&&matchesSearch});
-  productGrid.innerHTML=matches.map(p=>`<article class="product-card" data-category="${escapeHtml(p.categories.join(' '))}">${productImageMarkup(p)}<div class="product-body"><p class="brand">${escapeHtml(p.brand)}</p><dl><div><dt>Product:</dt><dd>${escapeHtml(p.product)}</dd></div><div><dt>Size:</dt><dd>${escapeHtml(p.size)}</dd></div><div><dt>Retail:</dt><dd>${escapeHtml(p.retail)}</dd></div><div><dt>Boutique De Leon Price:</dt><dd>${escapeHtml(p.price)}</dd></div><div><dt>Category:</dt><dd>${escapeHtml(p.categoryLabel)}</dd></div><div><dt>Status:</dt><dd>${escapeHtml(p.status)}</dd></div></dl><button class="button card-button inquire" data-product="${escapeHtml(p.brand+' '+p.product)}">Inquire</button></div></article>`).join('');
+  productGrid.innerHTML=matches.map(p=>`<article class="product-card" data-category="${escapeHtml(p.categories.join(' '))}">${productImageMarkup(p)}<div class="product-body"><p class="brand">${escapeHtml(p.brand)}</p><dl><div><dt>Product:</dt><dd>${escapeHtml(p.product)}</dd></div><div><dt>Size:</dt><dd>${escapeHtml(p.size)}</dd></div><div><dt>Retail:</dt><dd>${escapeHtml(p.retail)}</dd></div><div><dt>Boutique De Leon Price:</dt><dd>${escapeHtml(p.price)}</dd></div><div><dt>Category:</dt><dd>${escapeHtml(p.categoryLabel)}</dd></div><div><dt>Status:</dt><dd>${escapeHtml(p.status)}</dd></div>${p.description?`<div class="product-description"><dt>Description:</dt><dd>${escapeHtml(p.description)}</dd></div>`:''}</dl><button class="button card-button inquire" data-product="${escapeHtml(p.brand+' '+p.product)}">Inquire</button></div></article>`).join('');
   clearSearch.hidden=!query;noResults.hidden=matches.length!==0;searchResults.textContent=`${matches.length} product${matches.length===1?'':'s'} found`;
 }
 renderProducts();
