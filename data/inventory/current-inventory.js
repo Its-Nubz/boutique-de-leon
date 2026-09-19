@@ -1,0 +1,66 @@
+// Boutique De Leon current inventory additions and corrections.
+// Base catalog lives in products.js. This file contains newer inventory and authoritative overrides.
+(() => {
+  const products = window.BDL_PRODUCTS || (window.BDL_PRODUCTS = []);
+  const key = (brand, product) => `${brand}::${product}`.toLowerCase();
+
+  const find = (brand, product) => products.find(p => key(p.brand || "", p.product || "") === key(brand, product));
+  const upsert = (item, aliases = []) => {
+    let match = find(item.brand, item.product);
+    if (!match) {
+      for (const [brand, product] of aliases) {
+        match = find(brand, product);
+        if (match) break;
+      }
+    }
+    if (match) Object.assign(match, item);
+    else products.unshift(item);
+  };
+
+  const adoreMilk = find("ADORE COSMETICS", "Essence Facial Milk");
+  if (adoreMilk) adoreMilk.status = "1 Available";
+
+  const inventory = [
+    {brand:"PZ",product:"Arctic Essence Age-Defying Miracle Powder Serum",size:"1.7 fl oz",retail:"$900",price:"",categoryLabel:"Skincare / Serum",categories:["new","skincare"],status:"1 Available",image:""},
+
+    {brand:"PRÉDIRÉ PARIS",product:"Vitamin C & E Booster Facial Toner",size:"250 mL / 8.45 fl oz",retail:"$165",price:"$65",categoryLabel:"Skincare / Toner",categories:["new","skincare"],status:"1 Available",image:"images/products/Predire Paris Vitamin C & E Booster Facial Toner.png"},
+    {brand:"BELOW ZERO",product:"Frozen Gold Multi-Vitamin Magnetic Mud Mask",size:"50 mL / 1.7 fl oz",retail:"$950",price:"$85",categoryLabel:"Skincare / Face Mask",categories:["new","skincare"],status:"1 Available",image:"images/products/below zero Multi-Vitamin Magnetic Mud Mask.png"},
+    {brand:"BELOW ZERO",product:"Frozen Gold Firming & Tightening Peeling Mask with Multi-Peptide & Caffeine",size:"100 g / 3.53 fl oz",retail:"$3,750",price:"$85",categoryLabel:"Skincare / Peel-Off Mask",categories:["new","skincare"],status:"1 Available",image:"images/products/Below Zero Frozen Gold - Firming & Tightening Below Zero Peeling Mask enriched with Multi-Peptide & Caffeine.png"},
+    {brand:"PRÉDIRÉ PARIS",product:"Daily Defence Vitamin C Brightening Dropper",size:"30 mL / 1 fl oz",retail:"$299.99",price:"",categoryLabel:"Skincare / Serum",categories:["new","skincare"],status:"1 Available",image:""},
+    {brand:"PRÉDIRÉ PARIS",product:"24K Gold Intensive Care Ritual Set",size:"4-Piece Skincare Set + 5 Pairs Eye Mask Pads",retail:"$269.99",price:"",categoryLabel:"Skincare / Set",categories:["new","skincare","gifts"],status:"1 Available",image:""},
+
+    {brand:"ROYALE",product:"Flawless Magic Oil Hair Serum",size:"120 mL / 4.05 fl oz",retail:"$250",price:"",categoryLabel:"Hair / Serum",categories:["new","hair"],status:"1 Available",image:""},
+    {brand:"ROYALE",product:"5 IN 1 Hair Mask",size:"200 g / 7.05 oz",retail:"$75",price:"",categoryLabel:"Hair / Mask",categories:["new","hair"],status:"1 Available",image:""},
+    {brand:"ROYALE",product:"Royale Rescue Revitalizing Shampoo",size:"250 mL / 8.45 fl oz",retail:"$75",price:"",categoryLabel:"Hair / Shampoo",categories:["new","hair"],status:"1 Available",image:""},
+    {brand:"ROYALE",product:"Brilliant Gloss & Humidity Shield Mist",size:"",retail:"$150",price:"",categoryLabel:"Hair / Styling Mist",categories:["new","hair"],status:"1 Available",image:""},
+    {brand:"ROYALE",product:"Hair Rescue Repair Essence Mist",size:"",retail:"$150",price:"",categoryLabel:"Hair / Repair Mist",categories:["new","hair"],status:"1 Available",image:""},
+    {brand:"ROYALE",product:"Multi-Purpose Ceramic Hair Brush - Rose Gold",size:"Dual Voltage 110V-240V",retail:"$500",price:"",categoryLabel:"Hair / Styling Tool",categories:["new","hair"],status:"1 Available",image:""},
+
+    {brand:"SECRET COLLAGEN",product:"24K Gold Luxury Skincare Collection",size:"6-Piece Skincare Collection",retail:"$6,800",price:"$120",categoryLabel:"Skincare / Set",categories:["new","skincare","gifts"],status:"1 Available",image:"Secret Collagen Timeless Age-defying Ritual Collection.png",aliases:[["SECRET GOLD 24K","Luxury Skincare Collection"]]},
+
+    {brand:"BELOW ZERO SWISS",product:"Pink Diamond Divine Summit Cell Renewal Cream",size:"50 mL / 1.7 fl oz",retail:"$950",price:"$75",categoryLabel:"Skincare / Moisturizer",categories:["new","skincare"],status:"1 Available",image:"Below Zero Pink Diamond Divine Summit Hydrolyzed Collagen Cell-Renewal Cream.png"},
+    {brand:"BELOW ZERO SWISS",product:"Pink Diamond Hydrolyzed Collagen Cell-Renewal Thermal Mask",size:"50 mL",retail:"$900",price:"$75",categoryLabel:"Skincare / Face Mask",categories:["new","skincare"],status:"1 Available",image:"Below Zero Pink Diamond Divine Summit Hydrolyzed Collagen Cell-Renewal Thermal Mask.png"},
+    {brand:"BELOW ZERO SWISS",product:"Pink Diamond Firm & Rejuvenate Collagen Overnight Threading Mask",size:"",retail:"",price:"",categoryLabel:"Skincare / Overnight Mask",categories:["new","skincare"],status:"1 Available",image:""},
+    {brand:"BELOW ZERO SWISS",product:"Pink Diamond Radiant Essence",size:"",retail:"",price:"",categoryLabel:"Skincare / Essence",categories:["new","skincare"],status:"1 Available",image:""},
+    {brand:"BELOW ZERO SWISS",product:"Pink Diamond Eye Serum",size:"",retail:"",price:"",categoryLabel:"Skincare / Eye Serum",categories:["new","skincare"],status:"1 Available",image:""},
+    {brand:"ELIYA SKIN",product:"Skin Nourish Mask - Infused with Coral Grass & Green Algae Extracts",size:"100 mL / 3.4 fl oz",retail:"$299.99",price:"$65",categoryLabel:"Skincare / Face Mask",categories:["new","skincare"],status:"1 Available",image:"Eliya skin Skin Nourish Mask - Infused with Coral Grass & Green Algae Extracts.png"},
+
+    {brand:"M. MICALLEF",product:"Royal Vintage Eau de Parfum",size:"100 mL / 3.3 fl oz",retail:"",price:"",categoryLabel:"Fragrance / Eau de Parfum",categories:["new","fragrance"],status:"1 Available",image:""},
+    {brand:"M. MICALLEF",product:"Mon Parfum Cristal Eau de Parfum",size:"",retail:"",price:"",categoryLabel:"Fragrance / Eau de Parfum",categories:["new","fragrance"],status:"1 Available",image:""},
+    {brand:"M. MICALLEF",product:"Ylang in Gold Eau de Parfum",size:"",retail:"",price:"",categoryLabel:"Fragrance / Eau de Parfum",categories:["new","fragrance"],status:"1 Available",image:""},
+
+    {brand:"CELLAbeauti",product:"PDRN Solution Salmon Ampoule",size:"35 mL / 1.18 fl oz",retail:"",price:"$35",categoryLabel:"Skincare / Ampoule",categories:["new","skincare"],status:"1 Available",image:"images/products/cellabeauti-pdrn-salmon-ampoule.jpg"},
+    {brand:"CELLAbeauti",product:"PDRN Ampoule — Cica",size:"",retail:"",price:"$35",categoryLabel:"Skincare / Ampoule",categories:["new","skincare"],status:"1 Available",image:"Cellabeauti PDRN ampoule-cica.png"},
+    {brand:"CELLAbeauti",product:"PDRN Ampoule — Collagen",size:"",retail:"",price:"",categoryLabel:"Skincare / Ampoule",categories:["new","skincare"],status:"1 Available",image:""},
+
+    {brand:"BELOW ZERO",product:"Timeless Age Defying Ritual Collection 6-Piece Set",size:"6-Piece Skincare Set",retail:"$8,600",price:"$350",categoryLabel:"Skincare / Set",categories:["new","skincare","gifts"],status:"1 Available",image:"images/products/Below Zero Timeless Age Defying Ritual Collection.png"},
+
+    {brand:"ILIA",product:"Fullest Volumizing Mascara - Classic Black",size:"0.32 fl oz / 9.5 mL",retail:"$29",price:"$25",categoryLabel:"Cosmetics / Mascara",categories:["new","makeup","cosmetics"],status:"2 Available",image:"images/products/Ilia fullest volumizing mascara.webp"},
+    {brand:"LA PRÉDIRÉ PRESTIGE PARIS",product:"La Belle Flawless Matte Liquid Foundation",size:"30 mL / 1 fl oz",retail:"$160",price:"$35",categoryLabel:"Cosmetics / Foundation",categories:["new","makeup","cosmetics"],status:"2 Available",image:"images/products/la prestige flawless matte foundation.webp"}
+  ];
+
+  for (const entry of inventory) {
+    const { aliases = [], ...item } = entry;
+    upsert(item, aliases);
+  }
+})();
