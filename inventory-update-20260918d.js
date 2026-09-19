@@ -6,7 +6,7 @@
     product:"24K Gold Luxury Skincare Collection",
     size:"6-Piece Skincare Collection",
     retail:"$6,800",
-    price:"",
+    price:"$120",
     categoryLabel:"Skincare / Set",
     categories:["new","skincare","gifts"],
     status:"1 Available",
