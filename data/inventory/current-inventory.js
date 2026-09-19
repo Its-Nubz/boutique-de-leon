@@ -31,6 +31,12 @@
   if (cocoageExtraShot) cocoageExtraShot.price = "$65";
   const cocoageHotTemp = find("COCOÀGE COSMETICS", "HOT TEMP Intense 24K Anti-Wrinkle Cream");
   if (cocoageHotTemp) cocoageHotTemp.price = "$65";
+  const cocoageRoastedToner = find("COCOÀGE COSMETICS", "Roasted Extract 24K Purifying Toner");
+  if (cocoageRoastedToner) cocoageRoastedToner.price = "$45";
+  const cocoageSweetTreat = find("COCOÀGE COSMETICS", "Sweet Treat 24K Hydrating Cream for All Skin Types");
+  if (cocoageSweetTreat) cocoageSweetTreat.price = "$50";
+  const cocoageVitaCocoa = find("COCOÀGE COSMETICS", "VitaCocoa 24K Vitamin C Serum");
+  if (cocoageVitaCocoa) cocoageVitaCocoa.price = "$65";
   const inventory = [
     {brand:"BELOW ZERO",product:"Glacier Ice Age Defying Cooling Cream & Serum",size:"30 mL / 1.0 fl oz",retail:"$500",price:"$75",categoryLabel:"Skincare / Cream & Serum",categories:["new","skincare"],status:"1 Available",image:"images/products/Below Zero Glacier Ice Age Defying Cooling Cream and Serum.webp"},
     {brand:"BELOW ZERO",product:"Glacier Ice Age Defying Cooling Cream",size:"",retail:"$1,000",price:"$75",categoryLabel:"Skincare / Moisturizer",categories:["new","skincare"],status:"1 Available",image:"images/products/Below Zero Glacier Ice Age Defying Cooling Cream.webp"},
