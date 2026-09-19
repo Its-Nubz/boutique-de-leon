@@ -18,7 +18,7 @@
   const adorePeelingGel = find("ADORE COSMETICS", "Essence Facial Peeling Gel");
   if (adorePeelingGel) adorePeelingGel.price = "$75";
   const inventory = [
-    {brand:"BELOW ZERO",product:"Glacier Ice Age Defying Cooling Cream & Serum",size:"30 mL / 1.0 fl oz",retail:"$500",price:"",categoryLabel:"Skincare / Cream & Serum",categories:["new","skincare"],status:"1 Available",image:"images/products/Below Zero Glacier Ice Age Defying Cooling Cream and Serum.webp"},
+    {brand:"BELOW ZERO",product:"Glacier Ice Age Defying Cooling Cream & Serum",size:"30 mL / 1.0 fl oz",retail:"$500",price:"$75",categoryLabel:"Skincare / Cream & Serum",categories:["new","skincare"],status:"1 Available",image:"images/products/Below Zero Glacier Ice Age Defying Cooling Cream and Serum.webp"},
     {brand:"BELOW ZERO",product:"Glacier Ice Age Defying Cooling Cream",size:"",retail:"$1,000",price:"$75",categoryLabel:"Skincare / Moisturizer",categories:["new","skincare"],status:"1 Available",image:"images/products/Below Zero Glacier Ice Age Defying Cooling Cream.webp"},
     {brand:"BELOW ZERO",product:"Glacier Ice Age Defying Oil Control Firming & Tightening Peeling Mask",size:"",retail:"$1,900",price:"",categoryLabel:"Skincare / Peel-Off Mask",categories:["new","skincare"],status:"1 Available",image:"images/products/Below Zero Glacier Age Defying Oil Control Firming and Tightening Peeling Mask.webp"},
     {brand:"BELOW ZERO",product:"Glacier Ice Age Defying Cooling Serum",size:"50 mL / 1.7 fl oz",retail:"$950",price:"",categoryLabel:"Skincare / Serum",categories:["new","skincare"],status:"1 Available",image:"images/products/Below Zero Glacier Ice Age Defying Cooling Serum.webp"},
