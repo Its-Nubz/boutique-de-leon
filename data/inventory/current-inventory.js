@@ -34,8 +34,8 @@
 
     {brand:"ROYALE",product:"Flawless Magic Oil Hair Serum",size:"120 mL / 4.05 fl oz",retail:"$250",price:"",categoryLabel:"Hair / Serum",categories:["new","hair"],status:"1 Available",image:""},
     {brand:"ROYALE",product:"5 IN 1 Hair Mask",size:"200 g / 7.05 oz",retail:"$75",price:"",categoryLabel:"Hair / Mask",categories:["new","hair"],status:"1 Available",image:""},
-    {brand:"ROYALE",product:"Royale Rescue Revitalizing Shampoo",size:"250 mL / 8.45 fl oz",retail:"$75",price:"",categoryLabel:"Hair / Shampoo",categories:["new","hair"],status:"1 Available",image:""},
-    {brand:"ROYALE",product:"Brilliant Gloss & Humidity Shield Mist",size:"",retail:"$150",price:"",categoryLabel:"Hair / Styling Mist",categories:["new","hair"],status:"1 Available",image:""},
+    {brand:"ROYALE",product:"Royale Rescue Revitalizing Shampoo",size:"250 mL / 8.45 fl oz",retail:"$75",price:"",categoryLabel:"Hair / Shampoo",categories:["new","hair"],status:"1 Available",image:"images/products/Royale Rescue Revitalizing shampoo.webp"},
+    {brand:"ROYALE",product:"Brilliant Gloss & Humidity Shield Mist",size:"",retail:"$150",price:"",categoryLabel:"Hair / Styling Mist",categories:["new","hair"],status:"1 Available",image:"images/products/ROYALE-Brilliant Gloss&Humidity Shield Mist.webp"},
     {brand:"ROYALE",product:"Hair Rescue Repair Essence Mist",size:"",retail:"$150",price:"",categoryLabel:"Hair / Repair Mist",categories:["new","hair"],status:"1 Available",image:"images/products/ROYALE-Hair Rescue Repair Essence Mist.webp"},
     {brand:"ROYALE",product:"Multi-Purpose Ceramic Hair Brush - Rose Gold",size:"Dual Voltage 110V-240V",retail:"$500",price:"",categoryLabel:"Hair / Styling Tool",categories:["new","hair"],status:"1 Available",image:"images/products/Royale Multi-purpose ceramic hair brush-Rose gold.webp"},
 
