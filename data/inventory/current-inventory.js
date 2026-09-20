@@ -43,6 +43,8 @@
   if (cortexNightCream) cortexNightCream.price = "$40";
   const cortexVitaminCSerum = find("CORTEX BEAUTY", "Vitamin C Face Serum");
   if (cortexVitaminCSerum) cortexVitaminCSerum.price = "$25";
+  const eliyaVolcanicDetoxMask = find("ELIYA SKIN", "Volcanic Instant Detox Mask - Purification Formula for Deep Pore Cleansing");
+  if (eliyaVolcanicDetoxMask) eliyaVolcanicDetoxMask.price = "$30";
   const inventory = [
     {brand:"BELOW ZERO",product:"Glacier Ice Age Defying Cooling Cream & Serum",size:"30 mL / 1.0 fl oz",retail:"$500",price:"$75",categoryLabel:"Skincare / Cream & Serum",categories:["new","skincare"],status:"1 Available",image:"images/products/Below Zero Glacier Ice Age Defying Cooling Cream and Serum.webp"},
     {brand:"BELOW ZERO",product:"Glacier Ice Age Defying Cooling Cream",size:"",retail:"$1,000",price:"$75",categoryLabel:"Skincare / Moisturizer",categories:["new","skincare"],status:"1 Available",image:"images/products/Below Zero Glacier Ice Age Defying Cooling Cream.webp"},
