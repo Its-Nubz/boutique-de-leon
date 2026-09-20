@@ -25,4 +25,6 @@
   setPrice("PRÉDIRÉ PARIS", "Vitamin C & E Booster Facial Toner", "$75");
   setPrice("SECRET COLLAGEN", "Timeless Age-Defying Ritual Collection", "$100");
   setPrice("SECRET COLLAGEN", "24K Gold Luxury Skincare Collection", "$100");
+  setPrice("LÁTOÜA MILLE", "Serene English Pear & Freesia Body & Hair Fragrance", "$35");
+  setPrice("LÁTOÜA MILLE", "Still Rose Body & Hair Fragrance Mist", "$30");
 })();
