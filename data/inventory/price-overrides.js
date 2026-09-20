@@ -40,4 +40,5 @@
   setPrice("ROYALE", "Rescue Softening Conditioner - Vanilla", "$25");
   setPrice("ROYALE", "Rescue Softening Shampoo - Vanilla", "$25");
   setPrice("ROYALE", "Royale Rescue Revitalizing Shampoo", "$25");
+  setPrice("ROYALE", "5 IN 1 Hair Mask", "$35");
 })();
