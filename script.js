@@ -6,6 +6,7 @@ document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>na
 const escapeHtml=value=>String(value??'').replace(/[&<>'"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]));
 const productGrid=document.getElementById('productGrid');
 const products=window.BDL_PRODUCTS||[];
+products.forEach(product=>{product.status=/unavailable/i.test(String(product.status||''))?'Unavailable':'Available'});
 const productSearch=document.getElementById('productSearch');
 const clearSearch=document.getElementById('clearSearch');
 const searchResults=document.getElementById('searchResults');
