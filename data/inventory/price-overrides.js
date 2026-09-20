@@ -27,4 +27,7 @@
   setPrice("SECRET COLLAGEN", "24K Gold Luxury Skincare Collection", "$100");
   setPrice("LÁTOÜA MILLE", "Serene English Pear & Freesia Body & Hair Fragrance", "$35");
   setPrice("LÁTOÜA MILLE", "Still Rose Body & Hair Fragrance Mist", "$30");
+  setPrice("M. MICALLEF", "Mon Parfum Cristal Eau de Parfum", "$50");
+  setPrice("M. MICALLEF", "Royal Vintage Eau de Parfum", "$50");
+  setPrice("M. MICALLEF", "Ylang in Gold Eau de Parfum", "$50");
 })();
