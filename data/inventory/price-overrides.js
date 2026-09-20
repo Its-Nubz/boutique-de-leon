@@ -31,4 +31,13 @@
   setPrice("M. MICALLEF", "Mon Parfum Cristal Eau de Parfum", "$50");
   setPrice("M. MICALLEF", "Royal Vintage Eau de Parfum", "$50");
   setPrice("M. MICALLEF", "Ylang in Gold Eau de Parfum", "$50");
+  setPrice("ROYALE", "24K Gold Silk Radiance Keratin Hair Mask", "$35");
+  setPrice("ROYALE", "24K Gold Silk Radiance Keratin Hair Serum", "$45");
+  setPrice("ROYALE", "Brilliant Gloss & Humidity Shield Mist", "$30");
+  setPrice("ROYALE", "Flawless Magic Oil Hair Serum", "$30");
+  setPrice("ROYALE", "Hair Rescue Repair Essence Mist", "$30");
+  setPrice("ROYALE", "Multi-Purpose Ceramic Hair Brush - Rose Gold", "$75");
+  setPrice("ROYALE", "Rescue Softening Conditioner - Vanilla", "$25");
+  setPrice("ROYALE", "Rescue Softening Shampoo - Vanilla", "$25");
+  setPrice("ROYALE", "Royale Rescue Revitalizing Shampoo", "$25");
 })();
