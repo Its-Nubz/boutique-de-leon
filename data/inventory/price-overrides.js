@@ -2,10 +2,11 @@
 // Loaded after inventory so these prices take precedence over base and inventory records.
 (() => {
   const products = window.BDL_PRODUCTS || [];
-  const key = value => String(value || "").trim().toLowerCase();
+  const key = value => String(value || "").trim().normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
   const setPrice = (brand, product, price) => {
-    const match = products.find(p => key(p.brand) === key(brand) && key(p.product) === key(product));
-    if (match) match.price = price;
+    products.forEach(p => {
+      if (key(p.brand) === key(brand) && key(p.product) === key(product)) p.price = price;
+    });
   };
 
   setPrice("PRÉDIRÉ PARIS", "24K Gold Intensive Care Ritual Set", "$50");
