@@ -28,7 +28,7 @@
   setPrice("SECRET COLLAGEN", "24K Gold Luxury Skincare Collection", "$100");
   setPrice("LÁTOÜA MILLE", "Serene English Pear & Freesia Body & Hair Fragrance", "$35");
   setPrice("LÁTOÜA MILLE", "Still Rose Body & Hair Fragrance Mist", "$30");
-  setPrice("LÁTOÜA MILLE", "24H Moisture Renewal Day & Night Cream Set", "$55");
+  setPrice("LÁTOÜA MILLE", "24H Moisture Renewal Day & Night Cream Set", "$75");
   setPrice("M. MICALLEF", "Mon Parfum Cristal Eau de Parfum", "$50");
   setPrice("M. MICALLEF", "Royal Vintage Eau de Parfum", "$50");
   setPrice("M. MICALLEF", "Ylang in Gold Eau de Parfum", "$50");
@@ -43,8 +43,8 @@
   setPrice("ROYALE", "Royale Rescue Revitalizing Shampoo", "$25");
   setPrice("ROYALE", "5 IN 1 Hair Mask", "$35");
   setPrice("ELIYA SKIN", "Volcanic Instant Detox Mask - Purification Formula for Deep Pore Cleansing", "$30");
-  setPrice("ADORE COSMETICS", "Essence Facial Peeling Gel", "$45");
-  setPrice("ADORE COSMETICS", "Essence Facial Hydrating Cream - All Skin Types", "$50");
-  setPrice("BELOW ZERO", "Glacier Ice Age Defying Cooling Serum", "$55");
-  setPrice("BELOW ZERO", "Frozen Gold Multi-Vitamin Magnetic Mud Mask", "$65");
+  setPrice("ADORE COSMETICS", "Essence Facial Peeling Gel", "$75");
+  setPrice("ADORE COSMETICS", "Essence Facial Hydrating Cream - All Skin Types", "$75");
+  setPrice("BELOW ZERO", "Glacier Ice Age Defying Cooling Serum", "$75");
+  setPrice("BELOW ZERO", "Frozen Gold Multi-Vitamin Magnetic Mud Mask", "$85");
 })();
