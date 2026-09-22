@@ -108,7 +108,7 @@
       categoryLabel: "Electronics / Video Games",
       categories: ["new", "electronics"],
       status: "Available",
-      image: "",
+      image: "images/products/Battlefield-2042---Xbox-Series-X.avif",
       description: "Factory-sealed physical copy of Battlefield 2042 for Xbox Series X. Rated M for Mature. Internet connection and Xbox subscription requirements are noted on the packaging."
     },
     {
