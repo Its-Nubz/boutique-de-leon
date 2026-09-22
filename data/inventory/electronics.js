@@ -96,7 +96,7 @@
       categoryLabel: "Electronics / Power Bank",
       categories: ["new", "electronics"],
       status: "Available",
-      image: "",
+      image: "images/products/DX02 Wireless Magnetic Power Bank.webp",
       description: "Portable wireless magnetic power bank with magnetic attachment for compatible smartphones. Model DX02."
     },
     {
