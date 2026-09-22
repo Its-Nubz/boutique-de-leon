@@ -120,7 +120,7 @@
       categoryLabel: "Electronics / Wireless Display Adapter",
       categories: ["new", "electronics"],
       status: "Available",
-      image: "",
+      image: "images/products/Wireless Display Adapter.png",
       description: "Dual-band 5G and 2.4G wireless display adapter designed for wireless screen casting with wide compatibility, stable signal, and plug-and-play operation."
     }
   ];
