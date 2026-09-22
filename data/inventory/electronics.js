@@ -48,7 +48,7 @@
       categoryLabel: "Electronics / Security Safe",
       categories: ["new", "electronics"],
       status: "Available",
-      image: "",
+      image: "images/products/voncabay electronic money safe box with digital keypad.jpg",
       description: "Compact electronic money safe with a digital keypad, emergency key access, and blue finish for securing cash, documents, and small valuables."
     },
     {
