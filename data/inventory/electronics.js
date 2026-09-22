@@ -38,6 +38,18 @@
       status: "Available",
       image: "",
       description: "240W USB-C to USB-C magnetic charging and data cable with a braided nylon exterior and magnetic self-winding design for compact, tidy storage."
+    },
+    {
+      brand: "Voncabay",
+      product: "Electronic Money Safe Box with Digital Keypad - Blue",
+      size: "0.23 cu. ft.",
+      retail: "$49.99",
+      price: "$40",
+      categoryLabel: "Electronics / Security Safe",
+      categories: ["new", "electronics"],
+      status: "Available",
+      image: "",
+      description: "Compact electronic money safe with a digital keypad, emergency key access, and blue finish for securing cash, documents, and small valuables."
     }
   ];
   inventory.forEach(item => {
