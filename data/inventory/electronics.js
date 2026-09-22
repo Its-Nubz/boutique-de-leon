@@ -84,7 +84,7 @@
       categoryLabel: "Electronics / Bluetooth Speaker",
       categories: ["new", "electronics"],
       status: "Available",
-      image: "",
+      image: "images/products/phoenix IP 260 2-in 1 magnetic split bluetooth party bass speaker.jpg",
       description: "2-in-1 magnetic split Bluetooth party speaker with 20W output, Bluetooth 5.2, 3000mAh rechargeable battery, RGB lighting, FM radio, USB and microSD playback, IPX6 splash resistance, and up to 10–12 hours of playback."
     },
     {
