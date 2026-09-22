@@ -26,6 +26,18 @@
       status: "Available",
       image: "",
       description: "Open-ear bone conduction headphones with Bluetooth 5.3, 32GB built-in storage, IPX8 water resistance, magnetic charging, and up to 8 hours of playback."
+    },
+    {
+      brand: "Magtame",
+      product: "O-MagCable 240W Magnetic Charging Data Cable - USB-C to USB-C",
+      size: "1.5 m / 4.9 ft / 240W / Black",
+      retail: "$39.99",
+      price: "$30",
+      categoryLabel: "Electronics / Charging Cable",
+      categories: ["new", "electronics"],
+      status: "Available",
+      image: "",
+      description: "240W USB-C to USB-C magnetic charging and data cable with a braided nylon exterior and magnetic self-winding design for compact, tidy storage."
     }
   ];
   inventory.forEach(item => {
