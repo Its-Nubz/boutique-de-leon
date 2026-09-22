@@ -86,6 +86,18 @@
       status: "Available",
       image: "",
       description: "2-in-1 magnetic split Bluetooth party speaker with 20W output, Bluetooth 5.2, 3000mAh rechargeable battery, RGB lighting, FM radio, USB and microSD playback, IPX6 splash resistance, and up to 10–12 hours of playback."
+    },
+    {
+      brand: "Generic",
+      product: "DX02 Wireless Magnetic Power Bank",
+      size: "Model DX02",
+      retail: "",
+      price: "$25",
+      categoryLabel: "Electronics / Power Bank",
+      categories: ["new", "electronics"],
+      status: "Available",
+      image: "",
+      description: "Portable wireless magnetic power bank with magnetic attachment for compatible smartphones. Model DX02."
     }
   ];
   inventory.forEach(item => {
