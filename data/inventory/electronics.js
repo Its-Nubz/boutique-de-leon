@@ -36,7 +36,7 @@
       categoryLabel: "Electronics / Charging Cable",
       categories: ["new", "electronics"],
       status: "Available",
-      image: "",
+      image: "images/products/magtame o-magcable 240w magnetic charging data cable - USB-C to USB-C.jpg",
       description: "240W USB-C to USB-C magnetic charging and data cable with a braided nylon exterior and magnetic self-winding design for compact, tidy storage."
     },
     {
