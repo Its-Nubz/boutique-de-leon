@@ -72,7 +72,7 @@
       categoryLabel: "Electronics / Power Bank",
       categories: ["new", "electronics"],
       status: "Available",
-      image: "",
+      image: "images/products/matast p308 magnetic wireless power bank.jpg",
       description: "Compact 5000mAh magnetic wireless power bank with up to 15W wireless charging, USB-C wired charging, a slim portable design, and a fully leather-wrapped exterior for a premium look and feel."
     },
     {
