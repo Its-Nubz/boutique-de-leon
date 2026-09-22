@@ -12,7 +12,7 @@
       categoryLabel: "Electronics / Portable PA System",
       categories: ["new", "electronics"],
       status: "Available",
-      image: "",
+      image: "images/products/WinBridge S99 100W voice amplifier with dual wireless microphones.webp",
       description: "Portable 100W voice amplifier and PA system with two wireless handheld microphones, 4000mAh rechargeable battery, multiple voice effects, 50Hz–20KHz frequency range, 4–6 hour speaker runtime, and 10+ hour microphone runtime."
     },
     {
