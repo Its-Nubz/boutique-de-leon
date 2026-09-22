@@ -24,7 +24,7 @@
       categoryLabel: "Electronics / Headphones",
       categories: ["new", "electronics"],
       status: "Available",
-      image: "",
+      image: "images/products/T10 Air open-ear bone conduction headphones.webp",
       description: "Open-ear bone conduction headphones with Bluetooth 5.3, 32GB built-in storage, IPX8 water resistance, magnetic charging, and up to 8 hours of playback."
     },
     {
