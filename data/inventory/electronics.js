@@ -50,6 +50,18 @@
       status: "Available",
       image: "",
       description: "Compact electronic money safe with a digital keypad, emergency key access, and blue finish for securing cash, documents, and small valuables."
+    },
+    {
+      brand: "VanTop",
+      product: "H612T 4K 12-Inch Mirror Mounted Dash Camera - Front & Rear",
+      size: "12-inch IPS Touchscreen / Front & Rear Camera",
+      retail: "$199.99",
+      price: "$85",
+      categoryLabel: "Electronics / Dash Camera",
+      categories: ["new", "electronics"],
+      status: "Available",
+      image: "",
+      description: "Mirror-mounted dual dash camera system with a 12-inch IPS touchscreen, 4K front recording, rear-view camera, night vision, parking monitoring, and voice control."
     }
   ];
   inventory.forEach(item => {
