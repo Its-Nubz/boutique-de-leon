@@ -62,6 +62,18 @@
       status: "Available",
       image: "",
       description: "Mirror-mounted dual dash camera system with a 12-inch IPS touchscreen, 4K front recording, rear-view camera, night vision, parking monitoring, and voice control."
+    },
+    {
+      brand: "Matast",
+      product: "P308 Magnetic Wireless Power Bank",
+      size: "5000mAh / 15W Wireless / USB-C",
+      retail: "$49.99",
+      price: "$30",
+      categoryLabel: "Electronics / Power Bank",
+      categories: ["new", "electronics"],
+      status: "Available",
+      image: "",
+      description: "Compact 5000mAh magnetic wireless power bank with up to 15W wireless charging, USB-C wired charging, and a slim portable design."
     }
   ];
   inventory.forEach(item => {
