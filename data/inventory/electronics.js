@@ -60,7 +60,7 @@
       categoryLabel: "Electronics / Dash Camera",
       categories: ["new", "electronics"],
       status: "Available",
-      image: "",
+      image: "images/products/VanTop H612T 4k 12-inch mirror mounted Dash Camera - Front & rear.jpg",
       description: "Mirror-mounted dual dash camera system with a 12-inch IPS touchscreen, 4K front recording, rear-view camera, night vision, parking monitoring, and voice control."
     },
     {
