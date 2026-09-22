@@ -4,6 +4,7 @@
   const catalogFiles = [
     "products.js",
     "data/inventory/current-inventory.js",
+    "data/inventory/electronics.js",
     "data/inventory/price-overrides.js",
     "image-policy.js",
     "data/descriptions/cosmetics.js",
