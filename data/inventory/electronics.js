@@ -74,6 +74,18 @@
       status: "Available",
       image: "",
       description: "Compact 5000mAh magnetic wireless power bank with up to 15W wireless charging, USB-C wired charging, and a slim portable design."
+    },
+    {
+      brand: "iPhoenix",
+      product: "IP260 2-in-1 Magnetic Split Bluetooth Party Bass Speaker",
+      size: "20W / Bluetooth 5.2 / 3000mAh / IPX6",
+      retail: "$54",
+      price: "$45",
+      categoryLabel: "Electronics / Bluetooth Speaker",
+      categories: ["new", "electronics"],
+      status: "Available",
+      image: "",
+      description: "2-in-1 magnetic split Bluetooth party speaker with 20W output, Bluetooth 5.2, 3000mAh rechargeable battery, RGB lighting, FM radio, USB and microSD playback, IPX6 splash resistance, and up to 10–12 hours of playback."
     }
   ];
   inventory.forEach(item => {
