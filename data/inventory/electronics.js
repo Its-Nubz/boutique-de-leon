@@ -98,6 +98,18 @@
       status: "Available",
       image: "",
       description: "Portable wireless magnetic power bank with magnetic attachment for compatible smartphones. Model DX02."
+    },
+    {
+      brand: "Electronic Arts",
+      product: "Battlefield 2042 - Xbox Series X",
+      size: "Physical Game / Factory Sealed",
+      retail: "$69.99",
+      price: "$45",
+      categoryLabel: "Electronics / Video Games",
+      categories: ["new", "electronics"],
+      status: "Available",
+      image: "",
+      description: "Factory-sealed physical copy of Battlefield 2042 for Xbox Series X. Rated M for Mature. Internet connection and Xbox subscription requirements are noted on the packaging."
     }
   ];
   inventory.forEach(item => {
