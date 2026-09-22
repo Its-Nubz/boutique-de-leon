@@ -73,7 +73,7 @@
       categories: ["new", "electronics"],
       status: "Available",
       image: "",
-      description: "Compact 5000mAh magnetic wireless power bank with up to 15W wireless charging, USB-C wired charging, and a slim portable design."
+      description: "Compact 5000mAh magnetic wireless power bank with up to 15W wireless charging, USB-C wired charging, a slim portable design, and a fully leather-wrapped exterior for a premium look and feel."
     },
     {
       brand: "iPhoenix",
