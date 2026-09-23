@@ -127,7 +127,7 @@
       brand: "",
       product: "1:64 Racing Drift Remote Control Car",
       size: "1:64 Scale / 2.4GHz FHSS / 4WD / 100mAh LiPo",
-      retail: "$33.99",
+      retail: "",
       price: "",
       categoryLabel: "Electronics / Remote Control Car",
       categories: ["new", "electronics"],
