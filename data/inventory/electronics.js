@@ -122,6 +122,18 @@
       status: "Available",
       image: "images/products/Wireless Display Adapter.png",
       description: "Dual-band 5G and 2.4G wireless display adapter designed for wireless screen casting with wide compatibility, stable signal, and plug-and-play operation."
+    },
+    {
+      brand: "",
+      product: "1:64 Racing Drift Remote Control Car",
+      size: "1:64 Scale / 2.4GHz FHSS / 4WD / 100mAh LiPo",
+      retail: "$33.99",
+      price: "",
+      categoryLabel: "Electronics / Remote Control Car",
+      categories: ["new", "electronics"],
+      status: "Available",
+      image: "",
+      description: "1:64 scale racing drift remote control car with full proportional speed control, 2.4GHz FHSS radio control, four-wheel drive, simulation tires, a 100mAh LiPo battery, Type-C charging, more than 15 minutes of working time, and a DIY car shell."
     }
   ];
   inventory.forEach(item => {
