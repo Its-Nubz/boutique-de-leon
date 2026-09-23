@@ -112,7 +112,7 @@
       description: "Factory-sealed physical copy of Battlefield 2042 for Xbox Series X. Rated M for Mature. Internet connection and Xbox subscription requirements are noted on the packaging."
     },
     {
-      brand: "Braidol",
+      brand: "",
       product: "5G + 2.4G Dual-Band Wireless Display Adapter",
       size: "5G + 2.4G Dual Band",
       retail: "$129.99",
