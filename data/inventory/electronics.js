@@ -3,138 +3,18 @@
   const products = window.BDL_PRODUCTS || (window.BDL_PRODUCTS = []);
   const key = value => String(value || "").trim().toLowerCase();
   const inventory = [
-    {
-      brand: "WinBridge",
-      product: "S99 100W Voice Amplifier with Dual Wireless Microphones",
-      size: "100W / 4000mAh",
-      retail: "$239",
-      price: "$150",
-      categoryLabel: "Electronics / Portable PA System",
-      categories: ["new", "electronics"],
-      status: "Available",
-      image: "images/products/WinBridge S99 100W voice amplifier with dual wireless microphones.webp",
-      description: "Portable 100W voice amplifier and PA system with two wireless handheld microphones, 4000mAh rechargeable battery, multiple voice effects, 50Hz–20KHz frequency range, 4–6 hour speaker runtime, and 10+ hour microphone runtime."
-    },
-    {
-      brand: "HIFI WALKER",
-      product: "T10 Air Open-Ear Bone Conduction Headphones",
-      size: "Bluetooth 5.3 / 32GB Storage / IPX8",
-      retail: "$49.99",
-      price: "$35",
-      categoryLabel: "Electronics / Headphones",
-      categories: ["new", "electronics"],
-      status: "Available",
-      image: "images/products/T10 Air open-ear bone conduction headphones.webp",
-      description: "Open-ear bone conduction headphones with Bluetooth 5.3, 32GB built-in storage, IPX8 water resistance, magnetic charging, and up to 8 hours of playback."
-    },
-    {
-      brand: "Magtame",
-      product: "O-MagCable 240W Magnetic Charging Data Cable - USB-C to USB-C",
-      size: "1.5 m / 4.9 ft / 240W / Black",
-      retail: "$39.99",
-      price: "$30",
-      categoryLabel: "Electronics / Charging Cable",
-      categories: ["new", "electronics"],
-      status: "Available",
-      image: "images/products/magtame o-magcable 240w magnetic charging data cable - USB-C to USB-C.jpg",
-      description: "240W USB-C to USB-C magnetic charging and data cable with a braided nylon exterior and magnetic self-winding design for compact, tidy storage."
-    },
-    {
-      brand: "Voncabay",
-      product: "Electronic Money Safe Box with Digital Keypad - Blue",
-      size: "0.23 cu. ft.",
-      retail: "$49.99",
-      price: "$40",
-      categoryLabel: "Electronics / Security Safe",
-      categories: ["new", "electronics"],
-      status: "Available",
-      image: "images/products/voncabay electronic money safe box with digital keypad.jpg",
-      description: "Compact electronic money safe with a digital keypad, emergency key access, and blue finish for securing cash, documents, and small valuables."
-    },
-    {
-      brand: "VanTop",
-      product: "H612T 4K 12-Inch Mirror Mounted Dash Camera - Front & Rear",
-      size: "12-inch IPS Touchscreen / Front & Rear Camera",
-      retail: "$199.99",
-      price: "$85",
-      categoryLabel: "Electronics / Dash Camera",
-      categories: ["new", "electronics"],
-      status: "Available",
-      image: "images/products/VanTop H612T 4k 12-inch mirror mounted Dash Camera - Front & rear.jpg",
-      description: "Mirror-mounted dual dash camera system with a 12-inch IPS touchscreen, 4K front recording, rear-view camera, night vision, parking monitoring, and voice control."
-    },
-    {
-      brand: "Matast",
-      product: "P308 Magnetic Wireless Power Bank",
-      size: "5000mAh / 15W Wireless / USB-C",
-      retail: "$49.99",
-      price: "$30",
-      categoryLabel: "Electronics / Power Bank",
-      categories: ["new", "electronics"],
-      status: "Available",
-      image: "images/products/matast p308 magnetic wireless power bank.jpg",
-      description: "Compact 5000mAh magnetic wireless power bank with up to 15W wireless charging, USB-C wired charging, a slim portable design, and a fully leather-wrapped exterior for a premium look and feel."
-    },
-    {
-      brand: "iPhoenix",
-      product: "IP260 2-in-1 Magnetic Split Bluetooth Party Bass Speaker",
-      size: "20W / Bluetooth 5.2 / 3000mAh / IPX6",
-      retail: "$54",
-      price: "$45",
-      categoryLabel: "Electronics / Bluetooth Speaker",
-      categories: ["new", "electronics"],
-      status: "Available",
-      image: "images/products/phoenix IP 260 2-in 1 magnetic split bluetooth party bass speaker.jpg",
-      description: "2-in-1 magnetic split Bluetooth party speaker with 20W output, Bluetooth 5.2, 3000mAh rechargeable battery, RGB lighting, FM radio, USB and microSD playback, IPX6 splash resistance, and up to 10–12 hours of playback."
-    },
-    {
-      brand: "",
-      product: "DX02 Wireless Magnetic Power Bank",
-      size: "Model DX02",
-      retail: "",
-      price: "$25",
-      categoryLabel: "Electronics / Power Bank",
-      categories: ["new", "electronics"],
-      status: "Available",
-      image: "images/products/DX02 Wireless Magnetic Power Bank.webp",
-      description: "Portable wireless magnetic power bank with magnetic attachment for compatible smartphones. Model DX02."
-    },
-    {
-      brand: "Electronic Arts",
-      product: "Battlefield 2042 - Xbox Series X",
-      size: "Physical Game / Factory Sealed",
-      retail: "$69.99",
-      price: "$45",
-      categoryLabel: "Electronics / Video Games",
-      categories: ["new", "electronics"],
-      status: "Available",
-      image: "images/products/Battlefield-2042---Xbox-Series-X.avif",
-      description: "Factory-sealed physical copy of Battlefield 2042 for Xbox Series X. Rated M for Mature. Internet connection and Xbox subscription requirements are noted on the packaging."
-    },
-    {
-      brand: "",
-      product: "5G + 2.4G Dual-Band Wireless Display Adapter",
-      size: "5G + 2.4G Dual Band",
-      retail: "$129.99",
-      price: "$100",
-      categoryLabel: "Electronics / Wireless Display Adapter",
-      categories: ["new", "electronics"],
-      status: "Available",
-      image: "images/products/Wireless Display Adapter.png",
-      description: "Dual-band 5G and 2.4G wireless display adapter designed for wireless screen casting with wide compatibility, stable signal, and plug-and-play operation."
-    },
-    {
-      brand: "",
-      product: "K16 1:64 Racing Drift Remote Control Car",
-      size: "1:64 Scale / 2.4GHz FHSS / 4WD / 100mAh LiPo",
-      retail: "",
-      price: "$35",
-      categoryLabel: "Electronics / Remote Control Car",
-      categories: ["new", "electronics"],
-      status: "Available",
-      image: "",
-      description: "K16 1:64 scale racing drift remote control car with full proportional speed control, 2.4GHz FHSS radio control, four-wheel drive, simulation tires, a 100mAh LiPo battery, Type-C charging, more than 15 minutes of working time, and a DIY car shell."
-    }
+    { brand: "WinBridge", product: "S99 100W Voice Amplifier with Dual Wireless Microphones", size: "100W / 4000mAh", retail: "$239", price: "$150", categoryLabel: "Electronics / Portable PA System", categories: ["new", "electronics"], status: "Available", image: "images/products/WinBridge S99 100W voice amplifier with dual wireless microphones.webp", description: "Portable 100W voice amplifier and PA system with two wireless handheld microphones, 4000mAh rechargeable battery, multiple voice effects, 50Hz–20KHz frequency range, 4–6 hour speaker runtime, and 10+ hour microphone runtime." },
+    { brand: "HIFI WALKER", product: "T10 Air Open-Ear Bone Conduction Headphones", size: "Bluetooth 5.3 / 32GB Storage / IPX8", retail: "$49.99", price: "$35", categoryLabel: "Electronics / Headphones", categories: ["new", "electronics"], status: "Available", image: "images/products/T10 Air open-ear bone conduction headphones.webp", description: "Open-ear bone conduction headphones with Bluetooth 5.3, 32GB built-in storage, IPX8 water resistance, magnetic charging, and up to 8 hours of playback." },
+    { brand: "Magtame", product: "O-MagCable 240W Magnetic Charging Data Cable - USB-C to USB-C", size: "1.5 m / 4.9 ft / 240W / Black", retail: "$39.99", price: "$30", categoryLabel: "Electronics / Charging Cable", categories: ["new", "electronics"], status: "Available", image: "images/products/magtame o-magcable 240w magnetic charging data cable - USB-C to USB-C.jpg", description: "240W USB-C to USB-C magnetic charging and data cable with a braided nylon exterior and magnetic self-winding design for compact, tidy storage." },
+    { brand: "Voncabay", product: "Electronic Money Safe Box with Digital Keypad - Blue", size: "0.23 cu. ft.", retail: "$49.99", price: "$40", categoryLabel: "Electronics / Security Safe", categories: ["new", "electronics"], status: "Available", image: "images/products/voncabay electronic money safe box with digital keypad.jpg", description: "Compact electronic money safe with a digital keypad, emergency key access, and blue finish for securing cash, documents, and small valuables." },
+    { brand: "VanTop", product: "H612T 4K 12-Inch Mirror Mounted Dash Camera - Front & Rear", size: "12-inch IPS Touchscreen / Front & Rear Camera", retail: "$199.99", price: "$85", categoryLabel: "Electronics / Dash Camera", categories: ["new", "electronics"], status: "Available", image: "images/products/VanTop H612T 4k 12-inch mirror mounted Dash Camera - Front & rear.jpg", description: "Mirror-mounted dual dash camera system with a 12-inch IPS touchscreen, 4K front recording, rear-view camera, night vision, parking monitoring, and voice control." },
+    { brand: "Matast", product: "P308 Magnetic Wireless Power Bank", size: "5000mAh / 15W Wireless / USB-C", retail: "$49.99", price: "$30", categoryLabel: "Electronics / Power Bank", categories: ["new", "electronics"], status: "Available", image: "images/products/matast p308 magnetic wireless power bank.jpg", description: "Compact 5000mAh magnetic wireless power bank with up to 15W wireless charging, USB-C wired charging, a slim portable design, and a fully leather-wrapped exterior for a premium look and feel." },
+    { brand: "iPhoenix", product: "IP260 2-in-1 Magnetic Split Bluetooth Party Bass Speaker", size: "20W / Bluetooth 5.2 / 3000mAh / IPX6", retail: "$54", price: "$45", categoryLabel: "Electronics / Bluetooth Speaker", categories: ["new", "electronics"], status: "Available", image: "images/products/phoenix IP 260 2-in 1 magnetic split bluetooth party bass speaker.jpg", description: "2-in-1 magnetic split Bluetooth party speaker with 20W output, Bluetooth 5.2, 3000mAh rechargeable battery, RGB lighting, FM radio, USB and microSD playback, IPX6 splash resistance, and up to 10–12 hours of playback." },
+    { brand: "", product: "DX02 Wireless Magnetic Power Bank", size: "Model DX02", retail: "", price: "$25", categoryLabel: "Electronics / Power Bank", categories: ["new", "electronics"], status: "Available", image: "images/products/DX02 Wireless Magnetic Power Bank.webp", description: "Portable wireless magnetic power bank with magnetic attachment for compatible smartphones. Model DX02." },
+    { brand: "Electronic Arts", product: "Battlefield 2042 - Xbox Series X", size: "Physical Game / Factory Sealed", retail: "$69.99", price: "$45", categoryLabel: "Electronics / Video Games", categories: ["new", "electronics"], status: "Available", image: "images/products/Battlefield-2042---Xbox-Series-X.avif", description: "Factory-sealed physical copy of Battlefield 2042 for Xbox Series X. Rated M for Mature. Internet connection and Xbox subscription requirements are noted on the packaging." },
+    { brand: "", product: "5G + 2.4G Dual-Band Wireless Display Adapter", size: "5G + 2.4G Dual Band", retail: "$129.99", price: "$100", categoryLabel: "Electronics / Wireless Display Adapter", categories: ["new", "electronics"], status: "Available", image: "images/products/Wireless Display Adapter.png", description: "Dual-band 5G and 2.4G wireless display adapter designed for wireless screen casting with wide compatibility, stable signal, and plug-and-play operation." },
+    { brand: "", product: "K16 1:64 Racing Drift Remote Control Car", size: "1:64 Scale / 2.4GHz FHSS / 4WD / 100mAh LiPo", retail: "", price: "$35", categoryLabel: "Electronics / Remote Control Car", categories: ["new", "electronics"], status: "Available", image: "", description: "K16 1:64 scale racing drift remote control car with full proportional speed control, 2.4GHz FHSS radio control, four-wheel drive, simulation tires, a 100mAh LiPo battery, Type-C charging, more than 15 minutes of working time, and a DIY car shell." },
+    { brand: "xk.one", product: "xk.one Pro Smart AI Glasses", size: "3 Sets of Lenses", retail: "$199", price: "", categoryLabel: "Electronics / Smart Glasses", categories: ["new", "electronics"], status: "Available", image: "", description: "Smart AI glasses with HD video, real-time translation, AI voice assistant, built-in camera and touch controls. Includes three sets of interchangeable lenses." }
   ];
   inventory.forEach(item => {
     const existing = products.find(p => key(p.brand) === key(item.brand) && key(p.product) === key(item.product));
