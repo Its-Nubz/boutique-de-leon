@@ -19,7 +19,8 @@ function productImageMarkup(p){
   const label=escapeHtml(`${p.brand} ${p.product}`);
   if(!p.image)return `<div class="product-image-placeholder"><span>IMAGE COMING SOON</span></div>`;
   const imageSrc=String(p.image).split('/').map(segment=>encodeURIComponent(segment)).join('/');
-  return `<div class="product-image"><img src="${escapeHtml(imageSrc)}" alt="${label}" loading="lazy" decoding="async" onerror="this.parentElement.className='product-image-placeholder';this.parentElement.innerHTML='<span>IMAGE COMING SOON</span>'"></div>`;
+  const cacheBustedSrc=`${imageSrc}${imageSrc.includes('?')?'&':'?'}v=${Date.now()}`;
+  return `<div class="product-image"><img src="${escapeHtml(cacheBustedSrc)}" alt="${label}" loading="lazy" decoding="async" onerror="this.parentElement.className='product-image-placeholder';this.parentElement.innerHTML='<span>IMAGE COMING SOON</span>'"></div>`;
 }
 function renderProducts(){
   const query=productSearch.value.trim().toLocaleLowerCase();
