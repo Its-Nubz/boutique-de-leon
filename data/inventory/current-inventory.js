@@ -47,7 +47,7 @@
   if (eliyaVolcanicDetoxMask) eliyaVolcanicDetoxMask.price = "$30";
   const inventory = [
     {brand:"PRÉDIRÉ PARIS",product:"Vitamin C Radiance Ritual Set",size:"4-Piece Skincare Set",retail:"$399.99",price:"$50",categoryLabel:"Skincare / Set",categories:["new","skincare","gifts"],status:"Available",image:""},
-    {brand:"SECRET COLLAGEN",product:"Daily Renewal Vitamin C Facial Serum",size:"30 mL / 1 fl oz",retail:"$299.99",price:"$30",categoryLabel:"Skincare / Serum",categories:["new","skincare"],status:"Available",image:""},
+    {brand:"SECRET COLLAGEN",product:"Daily Renewal Vitamin C Facial Serum",size:"30 mL / 1 fl oz",retail:"$299.99",price:"$30",categoryLabel:"Skincare / Serum",categories:["new","skincare"],status:"Available",image:"images/products/Skincare/secret collagen Daily Renewal Vitamin C Facial Serum.png"},
     {brand:"PRÉDIRÉ PARIS",product:"Bio Brightening & Skin Toning Intensive Cream Complex",size:"50 mL / 1.7 fl oz",retail:"$950",price:"$50",categoryLabel:"Skincare / Moisturizer",categories:["new","skincare"],status:"Available",image:"https://predireparis.com/cdn/shop/files/PB001-Product_Box.jpg"},
     {brand:"PRÉDIRÉ PARIS",product:"Oil Control Firming & Tightening Peeling Mask",size:"100 g / 3.53 oz",retail:"$1,900",price:"$50",categoryLabel:"Skincare / Peel-Off Mask",categories:["new","skincare"],status:"1 Available",image:"https://predireparis.com/cdn/shop/files/POC004-Product_Box.jpg"},
     {brand:"COCOÀGE COSMETICS",product:"Cryogenic Crème De Nuit",size:"50 mL / 1.7 fl oz",retail:"$899.99",price:"$50",categoryLabel:"Skincare / Night Cream",categories:["new","skincare"],status:"1 Available",image:"https://cocoagecosmetics.com/cdn/shop/files/cocoage-cryogenic-jar-night-cream-1_1600x.jpg?v=1704220157"},
