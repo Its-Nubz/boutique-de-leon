@@ -46,6 +46,7 @@
   const eliyaVolcanicDetoxMask = find("ELIYA SKIN", "Volcanic Instant Detox Mask - Purification Formula for Deep Pore Cleansing");
   if (eliyaVolcanicDetoxMask) eliyaVolcanicDetoxMask.price = "$30";
   const inventory = [
+    {brand:"PRÉDIRÉ PARIS",product:"Oil Control Firming & Tightening Peeling Mask",size:"100 g / 3.53 oz",retail:"$1,900",price:"",categoryLabel:"Skincare / Peel-Off Mask",categories:["new","skincare"],status:"1 Available",image:"https://predireparis.com/cdn/shop/files/POC004-Product_Box.jpg"},
     {brand:"COCOÀGE COSMETICS",product:"Cryogenic Crème De Nuit",size:"50 mL / 1.7 fl oz",retail:"$899.99",price:"$50",categoryLabel:"Skincare / Night Cream",categories:["new","skincare"],status:"1 Available",image:"https://cocoagecosmetics.com/cdn/shop/files/cocoage-cryogenic-jar-night-cream-1_1600x.jpg?v=1704220157"},
     {brand:"BELOW ZERO",product:"Glacier Ice Age Defying Cooling Cream & Serum",size:"30 mL / 1.0 fl oz",retail:"$500",price:"$75",categoryLabel:"Skincare / Cream & Serum",categories:["new","skincare"],status:"1 Available",image:"images/products/Skincare/Below Zero Glacier Ice Age Defying Cooling Cream and Serum.webp"},
     {brand:"BELOW ZERO",product:"Glacier Ice Age Defying Cooling Cream",size:"",retail:"$1,000",price:"$75",categoryLabel:"Skincare / Moisturizer",categories:["new","skincare"],status:"1 Available",image:"images/products/Skincare/Below Zero Glacier Ice Age Defying Cooling Cream.webp"},
