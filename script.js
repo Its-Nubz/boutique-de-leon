@@ -42,6 +42,14 @@ const dialog=document.getElementById('inquiryDialog');const item=document.getEle
 document.addEventListener('click',e=>{const btn=e.target.closest('.inquire');if(!btn)return;const product=btn.dataset.product||'General inquiry';item.value=product;inquirySubject.value=`Boutique De Leon — Inquiry: ${product}`;dialog.showModal()});
 document.querySelector('.close').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close()});
 
+const approvedReviews=Array.isArray(window.BDL_APPROVED_REVIEWS)?window.BDL_APPROVED_REVIEWS:[];
+const approvedReviewsEl=document.getElementById('approvedReviews');
+const reviewsEmpty=document.getElementById('reviewsEmpty');
+if(approvedReviewsEl){
+ approvedReviewsEl.innerHTML=approvedReviews.map(r=>{const rating=Math.max(1,Math.min(5,Number(r.rating)||5));return `<article class="review-card"><div class="review-stars" aria-label="${rating} out of 5 stars">${'★'.repeat(rating)}<span>${'★'.repeat(5-rating)}</span></div><blockquote>“${escapeHtml(r.review)}”</blockquote><p class="reviewer">${escapeHtml(r.name)}</p><p class="review-product">${escapeHtml(r.product)}</p></article>`}).join('');
+ if(reviewsEmpty)reviewsEmpty.hidden=approvedReviews.length>0;
+}
+
 const reviewDialog=document.getElementById('reviewDialog');
 const openReviewButtons=[document.getElementById('openReview'),document.getElementById('openReviewSection')].filter(Boolean);
 const reviewCategory=document.getElementById('reviewCategory');
