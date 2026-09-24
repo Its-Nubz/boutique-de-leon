@@ -12,6 +12,7 @@
     "data/descriptions/fragrance.js",
     "data/descriptions/hair.js",
     "data/descriptions/sets.js",
+    "data/reviews/approved-reviews.js",
     "script.js"
   ];
 
