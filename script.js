@@ -41,5 +41,41 @@ filters.forEach(btn=>btn.addEventListener('click',()=>{filters.forEach(b=>b.clas
 const dialog=document.getElementById('inquiryDialog');const item=document.getElementById('inquiryItem');const inquirySubject=document.getElementById('inquirySubject');
 document.addEventListener('click',e=>{const btn=e.target.closest('.inquire');if(!btn)return;const product=btn.dataset.product||'General inquiry';item.value=product;inquirySubject.value=`Boutique De Leon — Inquiry: ${product}`;dialog.showModal()});
 document.querySelector('.close').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close()});
+
+const reviewDialog=document.getElementById('reviewDialog');
+const openReviewButtons=[document.getElementById('openReview'),document.getElementById('openReviewSection')].filter(Boolean);
+const reviewCategory=document.getElementById('reviewCategory');
+const reviewBrand=document.getElementById('reviewBrand');
+const reviewBrandLabel=document.getElementById('reviewBrandLabel');
+const reviewProduct=document.getElementById('reviewProduct');
+const reviewableProducts=products.filter(p=>!/unavailable/i.test(String(p.status||'')));
+const reviewCategoryLabels={cosmetics:'Cosmetics',skincare:'Skincare',fragrance:'Fragrance',hair:'Hair',gifts:'Sets',electronics:'Electronics'};
+const reviewCategories=[...new Set(reviewableProducts.flatMap(p=>p.categories||[]).filter(x=>reviewCategoryLabels[x]))];
+reviewCategory.innerHTML='<option value="">Select a category</option>'+reviewCategories.map(x=>`<option value="${escapeHtml(x)}">${reviewCategoryLabels[x]}</option>`).join('');
+function reviewMatches(){
+ const category=reviewCategory.value;
+ const brand=reviewBrand.value;
+ return reviewableProducts.filter(p=>(p.categories||[]).includes(category)&&(!brand||p.brand===brand));
+}
+function populateReviewProducts(){
+ const matches=reviewMatches().sort((a,b)=>String(a.product).localeCompare(String(b.product)));
+ reviewProduct.innerHTML='<option value="">Select a product</option>'+matches.map(p=>`<option value="${escapeHtml(p.brand+' — '+p.product)}">${escapeHtml(p.product)}</option>`).join('');
+ reviewProduct.disabled=!reviewCategory.value;
+}
+reviewCategory.addEventListener('change',()=>{
+ const category=reviewCategory.value;
+ const deeper=['skincare','cosmetics','fragrance','hair','gifts'].includes(category);
+ reviewBrandLabel.hidden=!deeper;
+ reviewBrand.required=deeper;
+ const brands=[...new Set(reviewableProducts.filter(p=>(p.categories||[]).includes(category)).map(p=>p.brand))].sort((a,b)=>a.localeCompare(b));
+ reviewBrand.innerHTML='<option value="">Select a brand</option>'+brands.map(b=>`<option value="${escapeHtml(b)}">${escapeHtml(b)}</option>`).join('');
+ reviewBrand.value='';
+ populateReviewProducts();
+});
+reviewBrand.addEventListener('change',populateReviewProducts);
+openReviewButtons.forEach(btn=>btn.addEventListener('click',()=>reviewDialog.showModal()));
+document.querySelector('.review-close').addEventListener('click',()=>reviewDialog.close());
+reviewDialog.addEventListener('click',e=>{if(e.target===reviewDialog)reviewDialog.close()});
+
 function setupForm(form){form.addEventListener('submit',async e=>{e.preventDefault();if(!form.reportValidity())return;const name=form.querySelector('[name="name"]');const phone=form.querySelector('[name="phone"]');const email=form.querySelector('[name="email"]');if(!name.value.trim()){name.setCustomValidity('Please enter your name.');name.reportValidity();name.setCustomValidity('');return}const digits=phone.value.replace(/\D/g,'');if(digits.length!==10){phone.setCustomValidity('Please enter a 10-digit phone number.');phone.reportValidity();phone.setCustomValidity('');return}phone.value=digits;if(!email.value.trim()){email.setCustomValidity('Please enter your email address.');email.reportValidity();email.setCustomValidity('');return}const button=form.querySelector('button[type="submit"]');const status=form.querySelector('.form-status');const original=button.textContent;button.disabled=true;button.textContent='Sending...';status.textContent='';try{const response=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{Accept:'application/json'}});if(response.ok){status.textContent='Thank you! Your message has been sent to Boutique De Leon.';form.reset();if(form.id==='inquiryForm')setTimeout(()=>dialog.close(),1800)}else status.textContent="We couldn't send your message. Please try again."}catch(error){status.textContent="We couldn't send your message. Please try again."}finally{button.disabled=false;button.textContent=original}})}
 document.querySelectorAll('.live-form').forEach(setupForm);document.getElementById('year').textContent=new Date().getFullYear();
