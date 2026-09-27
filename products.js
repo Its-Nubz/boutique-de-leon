@@ -1,4 +1,5 @@
 window.BDL_PRODUCTS = [
+  {brand:"COACH",product:"Love Eau de Parfum",size:"50 mL / 1.7 fl oz",retail:"$102",price:"",categoryLabel:"Fragrance / Eau de Parfum",categories:["new","fragrance"],status:"Available",image:""},
   {brand:"INNER CELLS",product:"Age Defying Silken Lifting Cream",size:"18 mL / 0.6 fl oz",retail:"$949.99",price:"",categoryLabel:"Skincare / Lifting Cream",categories:["new","skincare"],status:"Available",image:""},
   {brand:"CORTEX BEAUTY",product:"Cleansing Face Wash - Brightening & Lightening Formula",size:"200 mL / 6.76 fl oz",retail:"$159",price:"",categoryLabel:"Skincare / Cleanser",categories:["new","skincare"],status:"Available",image:""},
   {brand:"BELOW ZERO",product:"Arctic Essence Age-Defying Thermal Mask",size:"50 mL / 1.7 fl oz",retail:"$900",price:"",categoryLabel:"Skincare / Face Mask",categories:["new","skincare"],status:"Available",image:""},
