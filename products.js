@@ -69,5 +69,6 @@ window.BDL_PRODUCTS = [
   {brand:"JIMMY CHOO",product:"Man Intense Eau de Toilette",size:"100 mL / 3.3 fl oz",retail:"$121",price:"$95",categoryLabel:"Fragrance / Eau de Toilette",categories:["new","fragrance"],status:"Available",image:""},
   {brand:"OSCAR DE LA RENTA",product:"So de la Renta Eau de Toilette",size:"100 mL / 3.4 fl oz",retail:"$85",price:"$65",categoryLabel:"Fragrance / Eau de Toilette",categories:["new","fragrance"],status:"Available",image:""},
   {brand:"MICHAEL KORS",product:"Gorgeous! Eau de Parfum",size:"100 mL / 3.4 fl oz",retail:"$122",price:"$100",categoryLabel:"Fragrance / Eau de Parfum",categories:["new","fragrance"],status:"Available",image:""},
-  {brand:"FRAGRANCE COUTURE / IN-VICTORY",product:"Gunmetal for Men Eau de Parfum",size:"35 mL / 1.17 fl oz",retail:"$14.99",price:"$13",categoryLabel:"Fragrance / Eau de Parfum",categories:["new","fragrance"],status:"Available",image:""}
+  {brand:"FRAGRANCE COUTURE / IN-VICTORY",product:"Gunmetal for Men Eau de Parfum",size:"35 mL / 1.17 fl oz",retail:"$14.99",price:"$13",categoryLabel:"Fragrance / Eau de Parfum",categories:["new","fragrance"],status:"Available",image:""},
+  {brand:"LÁTOÜA MILLE",product:"Revitalizing Hydra Firm Serum Enriched with Hyaluronic Acid + Multi-Peptide",size:"30 mL / 1.0 fl oz",retail:"$480",price:"$65",categoryLabel:"Skincare / Serum",categories:["new","skincare"],status:"Available",image:""}
 ];
