@@ -1,4 +1,5 @@
 window.BDL_PRODUCTS = [
+  {brand:"BURBERRY",product:"Brit Splash for Him Eau de Toilette",size:"100 mL / 3.3 fl oz",retail:"$84",price:"$75",categoryLabel:"Fragrance / Eau de Toilette",categories:["new","fragrance"],status:"Available",image:""},
   {brand:"JIMMY CHOO",product:"Man Ice Eau de Toilette",size:"100 mL / 3.3 fl oz",retail:"$108",price:"$85",categoryLabel:"Fragrance / Eau de Toilette",categories:["new","fragrance"],status:"Available",image:""},
   {brand:"DOLCE & GABBANA",product:"Devotion Eau de Parfum Travel Retail Exclusive Gift Set",size:"100 mL / 3.3 fl oz + 10 mL / 0.33 fl oz Travel Spray",retail:"$179",price:"$150",categoryLabel:"Fragrance / Gift Set",categories:["new","fragrance","gifts"],status:"Available",image:""},
   {brand:"COACH",product:"Love Eau de Parfum",size:"50 mL / 1.7 fl oz",retail:"$102",price:"",categoryLabel:"Fragrance / Eau de Parfum",categories:["new","fragrance"],status:"Available",image:""},
