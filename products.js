@@ -60,5 +60,5 @@ window.BDL_PRODUCTS = [
   {brand:"BELOW ZERO",product:"Glacier Ice Age Defying Cooling Cream",size:"50 mL / 1.7 fl oz",retail:"$1,000",price:"",categoryLabel:"Skincare / Moisturizer",categories:["skincare"],status:"Available",image:""},
   {brand:"BELOW ZERO",product:"Glacier Ice Age Defying Cooling Cream & Serum",size:"Cream & Serum Duo",retail:"$500",price:"",categoryLabel:"Skincare / Set",categories:["skincare","gifts"],status:"Available",image:""},
   {brand:"DWS",product:"A20 OWS/TWS Bluetooth Headset",size:"Bluetooth 5.3 / Black",retail:"$59.99",price:"$30",categoryLabel:"Electronics / Wireless Headphones",categories:["new","electronics"],status:"1 Available",image:"images/products/Electronics/DWS A20 OWS-TWS Bluetooth Headset.png"},
-  {brand:"LA PRESTIGE PARIS",product:"Secret Rose Prestige Pink Shiny Lipstick",size:"0.07 oz / 2 g",retail:"$120",price:"",categoryLabel:"Makeup / Lipstick",categories:["new","makeup"],status:"Available",image:""}
+  {brand:"LA PRESTIGE PARIS",product:"Secret Rose Prestige Pink Shiny Lipstick",size:"0.07 oz / 2 g",retail:"$120",price:"$40",categoryLabel:"Makeup / Lipstick",categories:["new","makeup"],status:"Available",image:""}
 ];
