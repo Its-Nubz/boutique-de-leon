@@ -1,6 +1,7 @@
 (() => {
   if (!Array.isArray(window.BDL_PRODUCTS)) return;
   const descriptions = [
+    ["BURBERRY","London Eau de Parfum for Women","A floral-fresh fragrance opening with gentle rose and honeysuckle. The heart combines tiare flower, jasmine and peony with fresh clementine zest, while sandalwood, musk and patchouli bring warmth and depth to the finish."],
     ["LÁTOÜA MILLE","Serene English Pear & Freesia Body & Hair Fragrance","A refined fragrance mist for hair and body with the natural freshness of English pear and airy freesia. The clean, balanced scent is light rather than overpowering, while hyaluronic acid and multi-peptide complement the lightweight formula for comfortable everyday wear."],
     ["LÁTOÜA MILLE","Still Rose Body & Hair Fragrance Mist","A clean, understated fragrance mist for hair and body with a soft, composed rose note that avoids excessive sweetness or powdery heaviness. The lightweight mist leaves a subtle floral scent and is formulated with hyaluronic acid and multi-peptide for a comfortable everyday application."],
     ["M. MICALLEF","Royal Vintage Eau de Parfum","A woody, spicy fragrance built around fresh bergamot and pink pepper, followed by cypress and leather and a base of musk and patchouli. The composition combines aromatic freshness with a polished, vintage-inspired character."],
