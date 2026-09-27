@@ -1,5 +1,5 @@
 window.BDL_PRODUCTS = [
-  {brand:"DOLCE & GABBANA",product:"Devotion Eau de Parfum Travel Retail Exclusive Gift Set",size:"100 mL / 3.3 fl oz + 10 mL / 0.33 fl oz Travel Spray",retail:"$179",price:"",categoryLabel:"Fragrance / Gift Set",categories:["new","fragrance","gifts"],status:"Available",image:""},
+  {brand:"DOLCE & GABBANA",product:"Devotion Eau de Parfum Travel Retail Exclusive Gift Set",size:"100 mL / 3.3 fl oz + 10 mL / 0.33 fl oz Travel Spray",retail:"$179",price:"$150",categoryLabel:"Fragrance / Gift Set",categories:["new","fragrance","gifts"],status:"Available",image:""},
   {brand:"COACH",product:"Love Eau de Parfum",size:"50 mL / 1.7 fl oz",retail:"$102",price:"",categoryLabel:"Fragrance / Eau de Parfum",categories:["new","fragrance"],status:"Available",image:""},
   {brand:"INNER CELLS",product:"Age Defying Silken Lifting Cream",size:"18 mL / 0.6 fl oz",retail:"$949.99",price:"",categoryLabel:"Skincare / Lifting Cream",categories:["new","skincare"],status:"Available",image:""},
   {brand:"CORTEX BEAUTY",product:"Cleansing Face Wash - Brightening & Lightening Formula",size:"200 mL / 6.76 fl oz",retail:"$159",price:"",categoryLabel:"Skincare / Cleanser",categories:["new","skincare"],status:"Available",image:""},
