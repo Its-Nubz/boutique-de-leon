@@ -1,6 +1,8 @@
 (() => {
   if (!Array.isArray(window.BDL_PRODUCTS)) return;
   const descriptions = [
+    ["VERSACE","Dylan Blue Pour Homme Eau de Toilette","A distinctive aromatic fougère fragrance with fresh Mediterranean character. Aquatic notes and citrus hints of bergamot and grapefruit meet black pepper, papyrus wood and incense, with mineral musk, tonka bean and saffron adding depth to the base."],
+    ["DOLCE & GABBANA","Dolce Rose Eau de Toilette","A vivid floral-fruity fragrance celebrating the rose. Italian mandarin brings brightness to delicate rose, while tangy red currant adds a lively, modern contrast."],
     ["VALENTINO","Born in Roma Donna Green Stravaganza Eau de Parfum","A floral, ambery and woody fragrance inspired by the cool gardens of Rome. It opens with the smoky character of Lapsang Souchong tea accord, followed by luminous jasmine absolute at the heart and sweet, alluring vanilla extract at the base."],
     ["BURBERRY","London Eau de Parfum for Women","A floral-fresh fragrance opening with gentle rose and honeysuckle. The heart combines tiare flower, jasmine and peony with fresh clementine zest, while sandalwood, musk and patchouli bring warmth and depth to the finish."],
     ["LÁTOÜA MILLE","Serene English Pear & Freesia Body & Hair Fragrance","A refined fragrance mist for hair and body with the natural freshness of English pear and airy freesia. The clean, balanced scent is light rather than overpowering, while hyaluronic acid and multi-peptide complement the lightweight formula for comfortable everyday wear."],
