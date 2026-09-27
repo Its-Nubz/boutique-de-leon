@@ -63,5 +63,9 @@ window.BDL_PRODUCTS = [
   {brand:"LA PRESTIGE PARIS",product:"Secret Rose Prestige Pink Shiny Lipstick",size:"0.07 oz / 2 g",retail:"$120",price:"$40",categoryLabel:"Makeup / Lipstick",categories:["new","makeup"],status:"Available",image:""},
   {brand:"PRÉDIRÉ PARIS",product:"Pomegranate Essence Skincare Ritual Set",size:"4-Piece Skincare Set",retail:"$269.99",price:"$50",categoryLabel:"Skincare / Set",categories:["new","skincare","gifts"],status:"Available",image:""},
   {brand:"PRÉDIRÉ PARIS",product:"Collagen Cell Renewal Poly-Peptide Moisturizing Serum",size:"30 mL / 1.0 fl oz",retail:"$600",price:"$50",categoryLabel:"Skincare / Serum",categories:["new","skincare"],status:"Available",image:""},
-  {brand:"DOLCE & GABBANA",product:"The One Gold Eau de Parfum Intense for Women",size:"75 mL / 2.5 fl oz",retail:"$153",price:"$130",categoryLabel:"Fragrance / Eau de Parfum",categories:["new","fragrance"],status:"Available",image:""}
+  {brand:"DOLCE & GABBANA",product:"The One Gold Eau de Parfum Intense for Women",size:"75 mL / 2.5 fl oz",retail:"$153",price:"$130",categoryLabel:"Fragrance / Eau de Parfum",categories:["new","fragrance"],status:"Available",image:""},
+  {brand:"PRÉDIRÉ PARIS",product:"Double-Acting Facial Serum Vitamin C Based Hydrating & Brightening",size:"30 mL / 1.0 fl oz",retail:"$400",price:"$50",categoryLabel:"Skincare / Serum",categories:["new","skincare"],status:"Available",image:""},
+  {brand:"PRÉDIRÉ PARIS",product:"Daily Defence Apple & Grape Stem Cell Concentrate Dropper",size:"30 mL / 1.0 fl oz",retail:"$299.99",price:"$55",categoryLabel:"Skincare / Serum",categories:["new","skincare"],status:"Available",image:""},
+  {brand:"JIMMY CHOO",product:"Man Intense Eau de Toilette",size:"100 mL / 3.3 fl oz",retail:"$121",price:"$95",categoryLabel:"Fragrance / Eau de Toilette",categories:["new","fragrance"],status:"Available",image:""},
+  {brand:"OSCAR DE LA RENTA",product:"So de la Renta Eau de Toilette",size:"100 mL / 3.4 fl oz",retail:"$85",price:"$65",categoryLabel:"Fragrance / Eau de Toilette",categories:["new","fragrance"],status:"Available",image:""}
 ];
