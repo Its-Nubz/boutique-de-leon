@@ -1,4 +1,5 @@
 window.BDL_PRODUCTS = [
+  {brand:"VALENTINO",product:"Born in Roma Donna Green Stravaganza Eau de Parfum",size:"30 mL / 1.0 fl oz",retail:"$110",price:"",categoryLabel:"Fragrance / Eau de Parfum",categories:["new","fragrance"],status:"Available",image:""},
   {brand:"BURBERRY",product:"London Eau de Parfum for Women",size:"100 mL / 3.3 fl oz",retail:"$148",price:"",categoryLabel:"Fragrance / Eau de Parfum",categories:["new","fragrance"],status:"Available",image:""},
   {brand:"LÁTOÜA MILLE",product:"Serene English Pear & Freesia Body & Hair Fragrance",size:"",retail:"$249.99",price:"",categoryLabel:"Fragrance / Body & Hair Mist",categories:["new","fragrance"],status:"1 Available",image:""},
   {brand:"LÁTOÜA MILLE",product:"Still Rose Body & Hair Fragrance Mist",size:"",retail:"$249.99",price:"",categoryLabel:"Fragrance / Body & Hair Mist",categories:["new","fragrance"],status:"1 Available",image:""},
