@@ -71,5 +71,4 @@ window.BDL_PRODUCTS = [
   {brand:"LÁTOÜA MILLE",product:"Revitalizing Hydra Firm Serum",size:"50 mL / 1.7 fl oz",retail:"$850",price:"$75",categoryLabel:"Skincare / Serum",categories:["new","skincare"],status:"Available",image:"images/products/Skincare/Látoüa Mille — Revitalizing Hydra Firm Serum .png"},
   {brand:"LÁTOÜA MILLE",product:"Skin Revive Exfoliant Gel",size:"50 mL / 1.7 fl oz",retail:"$650",price:"$50",categoryLabel:"Skincare / Exfoliator",categories:["new","skincare"],status:"Available",image:"images/products/Skincare/Látoüa Mille — Skin Revive Exfoliant Gel.png"},
   {brand:"BELOW ZERO",product:"Frozen Gold Multi-Vitamin Everyday Care Balancing Facial Cream",size:"50 mL / 1.7 fl oz",retail:"$950",price:"$75",categoryLabel:"Skincare / Moisturizer",categories:["new","skincare"],status:"Available",image:"images/products/Skincare/Below Zero — Frozen Gold Multi-Vitamin Everyday Care Balancing Facial Cream.png"},
-  {brand:"LÁTOÜA MILLE",product:"Firming & Lifting Age-Defying Cream",size:"50 mL / 1.7 fl oz",retail:"$1,100",price:"$75",categoryLabel:"Skincare / Firming Cream",categories:["new","skincare"],status:"Available",image:""}
 ];
