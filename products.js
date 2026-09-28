@@ -71,5 +71,6 @@ window.BDL_PRODUCTS = [
   {brand:"MICHAEL KORS",product:"Gorgeous! Eau de Parfum",size:"100 mL / 3.4 fl oz",retail:"$122",price:"$100",categoryLabel:"Fragrance / Eau de Parfum",categories:["new","fragrance"],status:"Available",image:""},
   {brand:"FRAGRANCE COUTURE / IN-VICTORY",product:"Gunmetal for Men Eau de Parfum",size:"35 mL / 1.17 fl oz",retail:"$14.99",price:"$13",categoryLabel:"Fragrance / Eau de Parfum",categories:["new","fragrance"],status:"Available",image:""},
   {brand:"LÁTOÜA MILLE",product:"Revitalizing Hydra Firm Serum Enriched with Hyaluronic Acid + Multi-Peptide",size:"30 mL / 1.0 fl oz",retail:"$480",price:"$65",categoryLabel:"Skincare / Serum",categories:["new","skincare"],status:"Available",image:""},
-  {brand:"LÁTOÜA MILLE",product:"Skin Revive Exfoliant Gel Enriched with Hyaluronic Acid + Multi-Peptide",size:"50 mL / 1.7 fl oz",retail:"$350",price:"$55",categoryLabel:"Skincare / Exfoliator",categories:["new","skincare"],status:"Available",image:""}
+  {brand:"LÁTOÜA MILLE",product:"Skin Revive Exfoliant Gel Enriched with Hyaluronic Acid + Multi-Peptide",size:"50 mL / 1.7 fl oz",retail:"$350",price:"$55",categoryLabel:"Skincare / Exfoliator",categories:["new","skincare"],status:"Available",image:""},
+  {brand:"BELOW ZERO",product:"Frozen Gold Multi-Vitamin Everyday Care Balancing Facial Cream",size:"50 mL / 1.7 fl oz",retail:"$500",price:"$90",categoryLabel:"Skincare / Moisturizer",categories:["new","skincare"],status:"Available",image:""}
 ];
