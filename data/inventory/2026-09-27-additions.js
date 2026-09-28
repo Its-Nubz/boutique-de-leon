@@ -14,6 +14,7 @@
     {brand:"GENERIC",product:"P8 Colorful Karaoke Set",size:"5W Wireless Karaoke Speaker + Microphone / Pink",retail:"$39.99",price:"$25",categoryLabel:"Electronics / Karaoke",categories:["new","electronics","gifts"],status:"Available",image:""},
     {brand:"CORTEX BEAUTY",product:"Cleansing Face Wash - Brightening & Lightening Formula",size:"200 mL / 6.76 fl oz",retail:"$159",price:"$45",categoryLabel:"Skincare / Cleanser",categories:["new","skincare"],status:"Available",image:""},
     {brand:"CORTEX BEAUTY",product:"Collagen Face Serum",size:"30 mL / 1 fl oz",retail:"$159",price:"$45",categoryLabel:"Skincare / Serum",categories:["new","skincare"],status:"Available",image:""},
-    {brand:"CORTEX BEAUTY",product:"Peptide Face Serum",size:"30 mL / 1 fl oz",retail:"$159",price:"$45",categoryLabel:"Skincare / Serum",categories:["new","skincare"],status:"Available",image:""}
+    {brand:"CORTEX BEAUTY",product:"Peptide Face Serum",size:"30 mL / 1 fl oz",retail:"$159",price:"$45",categoryLabel:"Skincare / Serum",categories:["new","skincare"],status:"Available",image:""},
+    {brand:"RARE BEAUTY",product:"True to Myself Tinted Pressed Finishing Powder",size:"0.28 oz / 8 g — Almond",retail:"$32",price:"$25",categoryLabel:"Cosmetics / Face Powder",categories:["new","cosmetics"],status:"1 Available",image:""}
   ].forEach(upsert);
 })();
