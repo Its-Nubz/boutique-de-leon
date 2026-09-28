@@ -17,6 +17,7 @@
     {brand:"CORTEX BEAUTY",product:"Peptide Face Serum",size:"30 mL / 1 fl oz",retail:"$159",price:"$45",categoryLabel:"Skincare / Serum",categories:["new","skincare"],status:"Available",image:""},
     {brand:"RARE BEAUTY",product:"True to Myself Tinted Pressed Finishing Powder",size:"0.28 oz / 8 g — Almond",retail:"$32",price:"$25",categoryLabel:"Cosmetics / Face Powder",categories:["new","cosmetics"],status:"1 Available",image:""},
     {brand:"BODY CEO",product:"Pure Mansa Eau de Parfum",size:"35 mL / 1.17 fl oz",retail:"$15",price:"$10",categoryLabel:"Fragrance / Eau de Parfum",categories:["new","fragrance"],status:"1 Available",image:""},
-    {brand:"ILIA",product:"True Skin Serum Concealer - SC6.5 Cayenne",size:"5 mL / 0.16 fl oz",retail:"$32",price:"$20",categoryLabel:"Cosmetics / Concealer",categories:["new","cosmetics"],status:"1 Available",image:""}
+    {brand:"ILIA",product:"True Skin Serum Concealer - SC6.5 Cayenne",size:"5 mL / 0.16 fl oz",retail:"$32",price:"$20",categoryLabel:"Cosmetics / Concealer",categories:["new","cosmetics"],status:"1 Available",image:""},
+    {brand:"KRISTALS COSMETICS",product:"AMETHYST Oxygen Instant Energizing Activating Serum",size:"50 mL / 1.7 fl oz",retail:"$899.95",price:"$90",categoryLabel:"Skincare / Serum",categories:["new","skincare"],status:"1 Available",image:""}
   ].forEach(upsert);
 })();
