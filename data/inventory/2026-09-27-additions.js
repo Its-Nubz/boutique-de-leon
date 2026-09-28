@@ -1,18 +1,42 @@
-// Boutique De Leon additions from September 27, 2026.
+// Boutique De Leon authoritative additions from September 27, 2026.
+// This file is loaded after the base catalog so today's records are upserted even if the base catalog changes.
 (() => {
   const products = window.BDL_PRODUCTS || (window.BDL_PRODUCTS = []);
-  const key = (brand, product) => `${brand}::${product}`.toLowerCase();
+  const key = (brand, product) => `${brand}::${product}`.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
   const upsert = item => {
     const match = products.find(p => key(p.brand || "", p.product || "") === key(item.brand, item.product));
     if (match) Object.assign(match, item); else products.unshift(item);
   };
 
   [
+    {brand:"BURBERRY",product:"London Eau de Parfum for Women",size:"100 mL / 3.3 fl oz",retail:"$148",price:"",categoryLabel:"Fragrance / Eau de Parfum",categories:["new","fragrance"],status:"Available",image:""},
+    {brand:"VALENTINO",product:"Born in Roma Donna Green Stravaganza Eau de Parfum",size:"30 mL / 1.0 fl oz",retail:"$110",price:"",categoryLabel:"Fragrance / Eau de Parfum",categories:["new","fragrance"],status:"Available",image:""},
+    {brand:"VERSACE",product:"Dylan Blue Pour Homme Eau de Toilette",size:"30 mL / 1.0 fl oz",retail:"$69",price:"$60",categoryLabel:"Fragrance / Eau de Toilette",categories:["new","fragrance"],status:"Available",image:""},
+    {brand:"DOLCE & GABBANA",product:"Dolce Rose Eau de Toilette",size:"75 mL / 2.5 fl oz",retail:"$135",price:"$100",categoryLabel:"Fragrance / Eau de Toilette",categories:["new","fragrance"],status:"Available",image:""},
+    {brand:"BELOW ZERO",product:"Arctic Essence Age-Defying Lifting Cream",size:"50 mL / 1.7 fl oz",retail:"$1,100",price:"$90",categoryLabel:"Skincare / Moisturizer",categories:["new","skincare"],status:"Available",image:""},
     {brand:"BELOW ZERO",product:"Arctic Essence Age-Defying Thermal Mask",size:"50 mL / 1.7 fl oz",retail:"$900",price:"$90",categoryLabel:"Skincare / Face Mask",categories:["new","skincare"],status:"Available",image:""},
+    {brand:"CORTEX BEAUTY",product:"Cleansing Face Wash - Brightening & Lightening Formula",size:"200 mL / 6.76 fl oz",retail:"$159",price:"$45",categoryLabel:"Skincare / Cleanser",categories:["new","skincare"],status:"Available",image:""},
+    {brand:"INNER CELLS",product:"Age Defying Silken Lifting Cream",size:"18 mL / 0.6 fl oz",retail:"$949.99",price:"",categoryLabel:"Skincare / Lifting Cream",categories:["new","skincare"],status:"Available",image:""},
+    {brand:"COACH",product:"Love Eau de Parfum",size:"30 mL / 1.0 fl oz",retail:"$80",price:"$65",categoryLabel:"Fragrance / Eau de Parfum",categories:["new","fragrance"],status:"Available",image:""},
+    {brand:"COACH",product:"For Men Eau de Toilette",size:"100 mL / 3.3 fl oz",retail:"$116",price:"$90",categoryLabel:"Fragrance / Eau de Toilette",categories:["new","fragrance"],status:"Available",image:""},
+    {brand:"DOLCE & GABBANA",product:"Devotion Eau de Parfum Travel Retail Exclusive Gift Set",size:"100 mL / 3.3 fl oz + 10 mL / 0.33 fl oz Travel Spray",retail:"$179",price:"$150",categoryLabel:"Fragrance / Gift Set",categories:["new","fragrance","gifts"],status:"Available",image:""},
+    {brand:"JIMMY CHOO",product:"Man Ice Eau de Toilette",size:"100 mL / 3.3 fl oz",retail:"$108",price:"$85",categoryLabel:"Fragrance / Eau de Toilette",categories:["new","fragrance"],status:"Available",image:""},
+    {brand:"BURBERRY",product:"Brit Splash for Him Eau de Toilette",size:"100 mL / 3.3 fl oz",retail:"$84",price:"$75",categoryLabel:"Fragrance / Eau de Toilette",categories:["new","fragrance"],status:"Available",image:""},
+    {brand:"BURBERRY",product:"Touch for Women Eau de Parfum",size:"100 mL / 3.3 fl oz",retail:"$148",price:"$125",categoryLabel:"Fragrance / Eau de Parfum",categories:["new","fragrance"],status:"Available",image:""},
+    {brand:"LA PRESTIGE PARIS",product:"Secret Rose Prestige Pink Shiny Lipstick",size:"0.07 oz / 2 g",retail:"$120",price:"$40",categoryLabel:"Cosmetics / Lipstick",categories:["new","cosmetics"],status:"Available",image:""},
+    {brand:"PRÉDIRÉ PARIS",product:"Pomegranate Essence Skincare Ritual Set",size:"4-Piece Skincare Set",retail:"$269.99",price:"$50",categoryLabel:"Skincare / Set",categories:["new","skincare","gifts"],status:"Available",image:""},
+    {brand:"PRÉDIRÉ PARIS",product:"Collagen Cell Renewal Poly-Peptide Moisturizing Serum",size:"30 mL / 1.0 fl oz",retail:"$600",price:"$50",categoryLabel:"Skincare / Serum",categories:["new","skincare"],status:"Available",image:""},
+    {brand:"PRÉDIRÉ PARIS",product:"Double-Acting Facial Serum Vitamin C Based Hydrating & Brightening",size:"30 mL / 1.0 fl oz",retail:"$400",price:"$50",categoryLabel:"Skincare / Serum",categories:["new","skincare"],status:"Available",image:""},
+    {brand:"PRÉDIRÉ PARIS",product:"Daily Defence Apple & Grape Stem Cell Concentrate Dropper",size:"30 mL / 1.0 fl oz",retail:"$299.99",price:"$55",categoryLabel:"Skincare / Serum",categories:["new","skincare"],status:"Available",image:""},
+    {brand:"DOLCE & GABBANA",product:"The One Gold Eau de Parfum Intense for Women",size:"75 mL / 2.5 fl oz",retail:"$153",price:"$130",categoryLabel:"Fragrance / Eau de Parfum",categories:["new","fragrance"],status:"Available",image:""},
+    {brand:"MICHAEL KORS",product:"Gorgeous! Eau de Parfum",size:"100 mL / 3.4 fl oz",retail:"$122",price:"$100",categoryLabel:"Fragrance / Eau de Parfum",categories:["new","fragrance"],status:"Available",image:""},
+    {brand:"JIMMY CHOO",product:"Man Intense Eau de Toilette",size:"100 mL / 3.3 fl oz",retail:"$121",price:"$95",categoryLabel:"Fragrance / Eau de Toilette",categories:["new","fragrance"],status:"Available",image:""},
+    {brand:"OSCAR DE LA RENTA",product:"So de la Renta Eau de Toilette",size:"100 mL / 3.4 fl oz",retail:"$85",price:"$65",categoryLabel:"Fragrance / Eau de Toilette",categories:["new","fragrance"],status:"Available",image:""},
+    {brand:"IN-VICTORY",product:"Gunmetal Eau de Parfum",size:"35 mL / 1.17 fl oz",retail:"$14.99",price:"$13",categoryLabel:"Fragrance / Eau de Parfum",categories:["new","fragrance"],status:"Available",image:""},
+    {brand:"LÁTOÜA MILLE",product:"Skin Revive Exfoliant Gel",size:"50 mL / 1.7 fl oz",retail:"$350",price:"$55",categoryLabel:"Skincare / Exfoliator",categories:["new","skincare"],status:"Available",image:""},
     {brand:"COLMI",product:"R02 Smart Ring",size:"Size #8 / Gold",retail:"$59.99",price:"$45",categoryLabel:"Electronics / Smart Ring",categories:["new","electronics"],status:"Available",image:""},
     {brand:"RECBLUE",product:"Wireless Headset",size:"Over-Ear Wireless Headphones",retail:"$39.99",price:"$25",categoryLabel:"Electronics / Wireless Headphones",categories:["new","electronics"],status:"Available",image:""},
     {brand:"GENERIC",product:"P8 Colorful Karaoke Set",size:"5W Wireless Karaoke Speaker + Microphone / Pink",retail:"$39.99",price:"$25",categoryLabel:"Electronics / Karaoke",categories:["new","electronics","gifts"],status:"Available",image:""},
-    {brand:"CORTEX BEAUTY",product:"Cleansing Face Wash - Brightening & Lightening Formula",size:"200 mL / 6.76 fl oz",retail:"$159",price:"$45",categoryLabel:"Skincare / Cleanser",categories:["new","skincare"],status:"Available",image:""},
     {brand:"CORTEX BEAUTY",product:"Collagen Face Serum",size:"30 mL / 1 fl oz",retail:"$159",price:"$45",categoryLabel:"Skincare / Serum",categories:["new","skincare"],status:"Available",image:""},
     {brand:"CORTEX BEAUTY",product:"Peptide Face Serum",size:"30 mL / 1 fl oz",retail:"$159",price:"$45",categoryLabel:"Skincare / Serum",categories:["new","skincare"],status:"Available",image:""},
     {brand:"RARE BEAUTY",product:"True to Myself Tinted Pressed Finishing Powder",size:"0.28 oz / 8 g — Almond",retail:"$32",price:"$25",categoryLabel:"Cosmetics / Face Powder",categories:["new","cosmetics"],status:"1 Available",image:""},
