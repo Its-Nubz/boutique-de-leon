@@ -15,6 +15,7 @@
     {brand:"CORTEX BEAUTY",product:"Cleansing Face Wash - Brightening & Lightening Formula",size:"200 mL / 6.76 fl oz",retail:"$159",price:"$45",categoryLabel:"Skincare / Cleanser",categories:["new","skincare"],status:"Available",image:""},
     {brand:"CORTEX BEAUTY",product:"Collagen Face Serum",size:"30 mL / 1 fl oz",retail:"$159",price:"$45",categoryLabel:"Skincare / Serum",categories:["new","skincare"],status:"Available",image:""},
     {brand:"CORTEX BEAUTY",product:"Peptide Face Serum",size:"30 mL / 1 fl oz",retail:"$159",price:"$45",categoryLabel:"Skincare / Serum",categories:["new","skincare"],status:"Available",image:""},
-    {brand:"RARE BEAUTY",product:"True to Myself Tinted Pressed Finishing Powder",size:"0.28 oz / 8 g — Almond",retail:"$32",price:"$25",categoryLabel:"Cosmetics / Face Powder",categories:["new","cosmetics"],status:"1 Available",image:""}
+    {brand:"RARE BEAUTY",product:"True to Myself Tinted Pressed Finishing Powder",size:"0.28 oz / 8 g — Almond",retail:"$32",price:"$25",categoryLabel:"Cosmetics / Face Powder",categories:["new","cosmetics"],status:"1 Available",image:""},
+    {brand:"BODY CEO",product:"Pure Mansa Eau de Parfum",size:"35 mL / 1.17 fl oz",retail:"$15",price:"$10",categoryLabel:"Fragrance / Eau de Parfum",categories:["new","fragrance"],status:"1 Available",image:""}
   ].forEach(upsert);
 })();
