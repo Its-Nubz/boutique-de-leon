@@ -6,6 +6,7 @@
     "data/inventory/current-inventory.js",
     "data/inventory/electronics.js",
     "data/inventory/price-overrides.js",
+    "data/inventory/2026-09-27-additions.js",
     "image-policy.js",
     "data/descriptions/cosmetics.js",
     "data/descriptions/skincare.js",
