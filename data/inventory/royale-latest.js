@@ -16,6 +16,7 @@
     categoryLabel: "Hair / Treatment Spray",
     categories: ["new", "hair"],
     status: "1 Available"
+    image: "images/products/Hair/ROYALE HAIR RESCUE — Perfect Rescue Revitalizing Hair Spray.png",
   });
 
   upsert({
@@ -27,5 +28,6 @@
     categoryLabel: "Hair / Styling Tools",
     categories: ["new", "hair"],
     status: "1 Available"
+    image: "images/products/Hair/ROYALE — Platinum Genius Heating Element Flat Iron.png",
   });
 })();
