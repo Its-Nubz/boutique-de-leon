@@ -79,4 +79,5 @@ window.BDL_PRODUCTS = [
   {brand:"BELOW ZERO",product:"Arctic Rescue Eye Treatment with Smart Light & Vibration Device",size:"50 mL / 1.7 fl oz",retail:"$2,400",price:"$50",categoryLabel:"Skincare / Eye Care Device",categories:["new","skincare"],status:"Available",image:""},
   {brand:"INNER CELLS",product:"Golden Nectar Honeysuckle Body Mist",size:"",retail:"$179.99",price:"$50",categoryLabel:"Fragrance / Body Mist",categories:["new","fragrance"],status:"Available",image:""},
   {brand:"PRÉDIRÉ PARIS",product:"LIONAILS Luxury Manicure Set - Coconut & Honey",size:"4-Piece Set",retail:"$145",price:"$50",categoryLabel:"Beauty / Nail Care",categories:["new","cosmetics"],status:"Available",image:""},
+  {brand:"SECRET COLLAGEN",product:"Grape Stem Cell Harmony Lava Foam Cleanser",size:"150 mL / 5.07 fl oz",retail:"$229",price:"$40",categoryLabel:"Skincare / Cleanser",categories:["new","skincare"],status:"Available",image:""},
 ];
