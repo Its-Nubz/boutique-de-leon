@@ -80,4 +80,6 @@ window.BDL_PRODUCTS = [
   {brand:"INNER CELLS",product:"Golden Nectar Honeysuckle Body Mist",size:"",retail:"$179.99",price:"$50",categoryLabel:"Fragrance / Body Mist",categories:["new","fragrance"],status:"Available",image:""},
   {brand:"PRÉDIRÉ PARIS",product:"LIONAILS Luxury Manicure Set - Coconut & Honey",size:"4-Piece Set",retail:"$145",price:"$50",categoryLabel:"Beauty / Nail Care",categories:["new","cosmetics"],status:"Available",image:""},
   {brand:"SECRET COLLAGEN",product:"Grape Stem Cell Harmony Lava Foam Cleanser",size:"150 mL / 5.07 fl oz",retail:"$229",price:"$40",categoryLabel:"Skincare / Cleanser",categories:["new","skincare"],status:"Available",image:""},
+  {brand:"ROYALE",product:"Rescue Revitalizing Hair Mask",size:"200 g / 7.05 fl oz",retail:"$75",price:"$35",categoryLabel:"Hair Care / Hair Mask",categories:["new","hair-care"],status:"Available",image:""},
+  {brand:"ROYALE",product:"Perfect Rescue Revitalizing Conditioner",size:"250 mL / 8.45 fl oz",retail:"$75",price:"$25",categoryLabel:"Hair Care / Conditioner",categories:["new","hair-care"],status:"Available",image:""},
 ];
