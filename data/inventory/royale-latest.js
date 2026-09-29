@@ -27,7 +27,7 @@
     price: "$125",
     categoryLabel: "Hair / Styling Tools",
     categories: ["new", "hair"],
-    status: "1 Available"
+    status: "1 Available",
     image: "images/products/Hair/ROYALE — Platinum Genius Heating Element Flat Iron.png",
   });
 })();
