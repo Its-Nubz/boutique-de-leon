@@ -74,5 +74,5 @@ window.BDL_PRODUCTS = [
   {brand:"DWS",product:"A20 OWS/TWS Bluetooth Headset",size:"Bluetooth 5.3 / Black",retail:"$59.99",price:"$30",categoryLabel:"Electronics / Wireless Headphones",categories:["new","electronics"],status:"1 Available",image:"images/products/Electronics/DWS A20 OWS-TWS Bluetooth Headset.png"},
   {brand:"iPHOENIX",product:"IP-730 Extra Bass Portable Bluetooth Speaker",size:"20W / Bluetooth 5.2 / 2400mAh / Black & Green",retail:"$54",price:"$50",categoryLabel:"Electronics / Bluetooth Speaker",categories:["new","electronics"],status:"Available",image:""},
   {brand:"PRITECH",product:"PR-2926 Professional 3-in-1 Grooming Set",size:"Hair Clipper + Shaver + Nose Trimmer",retail:"$38",price:"$30",categoryLabel:"Personal Care / Grooming",categories:["new","personal-care"],status:"Available",image:""},
-  {brand:"7AM2M",product:"AM100 Sonic Electric Toothbrush",size:"Black / 5 Modes / Rechargeable",retail:"",price:"$30",categoryLabel:"Personal Care / Oral Care",categories:["new","personal-care"],status:"3 Available",image:""},
+  {brand:"7AM2M",product:"AM100 Sonic Electric Toothbrush",size:"Black / 5 Modes / Rechargeable",retail:"",price:"$30",categoryLabel:"Personal Care / Oral Care",categories:["new","personal-care"],status:"Available",image:""},
 ];
