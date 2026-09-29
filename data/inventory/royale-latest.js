@@ -15,7 +15,7 @@
     price: "$20",
     categoryLabel: "Hair / Treatment Spray",
     categories: ["new", "hair"],
-    status: "1 Available"
+    status: "1 Available",
     image: "images/products/Hair/ROYALE HAIR RESCUE — Perfect Rescue Revitalizing Hair Spray.png",
   });
 
