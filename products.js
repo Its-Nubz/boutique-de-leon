@@ -75,4 +75,6 @@ window.BDL_PRODUCTS = [
   {brand:"iPHOENIX",product:"IP-730 Extra Bass Portable Bluetooth Speaker",size:"20W / Bluetooth 5.2 / 2400mAh / Black & Green",retail:"$54",price:"$50",categoryLabel:"Electronics / Bluetooth Speaker",categories:["new","electronics"],status:"Available",image:""},
   {brand:"PRITECH",product:"PR-2926 Professional 3-in-1 Grooming Set",size:"Hair Clipper + Shaver + Nose Trimmer",retail:"$38",price:"$30",categoryLabel:"Personal Care / Grooming",categories:["new","personal-care"],status:"Available",image:""},
   {brand:"7AM2M",product:"AM100 Sonic Electric Toothbrush",size:"Black / 5 Modes / Rechargeable",retail:"",price:"$30",categoryLabel:"Personal Care / Oral Care",categories:["new","personal-care"],status:"Available",image:""},
+  {brand:"CORTEX BEAUTY",product:"Exfoliating Face Scrub - Brightening & Lightening Formula",size:"250 mL",retail:"$159",price:"",categoryLabel:"Skincare / Exfoliator",categories:["new","skincare"],status:"Available",image:""},
+  {brand:"BELOW ZERO",product:"Arctic Rescue Eye Treatment with Smart Light & Vibration Device",size:"50 mL / 1.7 fl oz",retail:"$2,400",price:"",categoryLabel:"Skincare / Eye Care Device",categories:["new","skincare"],status:"Available",image:""},
 ];
