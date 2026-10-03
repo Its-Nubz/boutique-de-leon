@@ -57,7 +57,7 @@ const reviewBrand=document.getElementById('reviewBrand');
 const reviewBrandLabel=document.getElementById('reviewBrandLabel');
 const reviewProduct=document.getElementById('reviewProduct');
 const reviewableProducts=products.filter(p=>!/unavailable/i.test(String(p.status||'')));
-const reviewCategoryLabels={cosmetics:'Cosmetics',skincare:'Skincare',fragrance:'Fragrance',hair:'Hair',gifts:'Sets',electronics:'Electronics',sunglasses:'Sunglasses'};
+const reviewCategoryLabels={cosmetics:'Cosmetics',skincare:'Skincare',fragrance:'Fragrance',hair:'Hair',gifts:'Sets',electronics:'Electronics',randoms:'Randoms',sunglasses:'Sunglasses'};
 const reviewCategories=[...new Set(reviewableProducts.flatMap(p=>p.categories||[]).filter(x=>reviewCategoryLabels[x]))];
 reviewCategory.innerHTML='<option value="">Select a category</option>'+reviewCategories.map(x=>`<option value="${escapeHtml(x)}">${reviewCategoryLabels[x]}</option>`).join('');
 function reviewMatches(){
