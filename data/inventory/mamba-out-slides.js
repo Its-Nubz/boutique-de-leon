@@ -6,7 +6,7 @@
     product: "Kobe Bryant Tribute Slides — Blue/Gold",
     size: "Size shown on packaging / inquire",
     retail: "$36.24",
-    price: "$25",
+    price: "$30",
     categoryLabel: "Randoms / Slides",
     categories: ["new","randoms"],
     status: "1 Available",
