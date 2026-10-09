@@ -21,7 +21,10 @@
 
   const cacheKey = Date.now();
 
+  const showBabyJesusFeature = false; // Keep the feature available for later, but hide it for now.
+
   const featureBabyJesus = () => {
+    if (!showBabyJesusFeature) return;
     const tiles = document.querySelector('.category-tiles');
     if (!tiles || document.getElementById('babyJesusFeature')) return;
 
