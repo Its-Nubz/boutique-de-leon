@@ -57,7 +57,7 @@ const reviewBrand=document.getElementById('reviewBrand');
 const reviewBrandLabel=document.getElementById('reviewBrandLabel');
 const reviewProduct=document.getElementById('reviewProduct');
 const reviewableProducts=products.filter(p=>!/unavailable/i.test(String(p.status||'')));
-const reviewCategoryLabels={cosmetics:'Cosmetics',skincare:'Skincare',fragrance:'Fragrance',hair:'Hair',gifts:'Sets',electronics:'Electronics',randoms:'Randoms',sunglasses:'Sunglasses'};
+const reviewCategoryLabels={cosmetics:'Cosmetics',skincare:'Skincare',fragrance:'Fragrance',hair:'Hair',gifts:'Sets',electronics:'Electronics',randoms:'Randoms'};
 const reviewCategories=[...new Set(reviewableProducts.flatMap(p=>p.categories||[]).filter(x=>reviewCategoryLabels[x]))];
 reviewCategory.innerHTML='<option value="">Select a category</option>'+reviewCategories.map(x=>`<option value="${escapeHtml(x)}">${reviewCategoryLabels[x]}</option>`).join('');
 function reviewMatches(){
@@ -72,7 +72,7 @@ function populateReviewProducts(){
 }
 reviewCategory.addEventListener('change',()=>{
  const category=reviewCategory.value;
- const deeper=['skincare','cosmetics','fragrance','hair','gifts','sunglasses'].includes(category);
+ const deeper=['skincare','cosmetics','fragrance','hair','gifts'].includes(category);
  reviewBrandLabel.hidden=!deeper;
  reviewBrand.required=deeper;
  const brands=[...new Set(reviewableProducts.filter(p=>(p.categories||[]).includes(category)).map(p=>p.brand))].sort((a,b)=>a.localeCompare(b));
