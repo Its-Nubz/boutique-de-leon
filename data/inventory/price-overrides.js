@@ -21,7 +21,7 @@
   setPrice("PRÉDIRÉ PARIS", "Multi-Purpose Anti-Aging Skin Care Device", "$750");
   setPrice("PRÉDIRÉ PARIS", "Oil Control Cooling Serum (Enriched with Vitamin E & A)", "$75");
   setPrice("PRÉDIRÉ PARIS", "Prestige Element Multi-Purpose Face Mask", "$200");
-  setPrice("PRÉDIRÉ PARIS", "Red Wine Intensive Serum Face, Neck and Chest", "$50");
+  setPrice("PRÉDIRÉ PARIS", "Red Wine Intensive Serum Face, Neck and Chest", "$100");
   setPrice("PRÉDIRÉ PARIS", "V-Sculpt EMS & Light Therapy Device", "$150");
   setPrice("PRÉDIRÉ PARIS", "Vitamin C & E Booster Facial Toner", "$75");
   setPrice("SECRET COLLAGEN", "Timeless Age-Defying Ritual Collection", "$100");
