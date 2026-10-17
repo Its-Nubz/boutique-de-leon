@@ -1,4 +1,5 @@
 window.BDL_PRODUCTS = [
+  {brand:"UNBRANDED",product:"3-in-1 Foldable Wireless Charging Station",description:"Foldable wireless charging station for compatible phone, Apple Watch and earbuds. Supports vertical or horizontal phone charging.",size:"N/A",retail:"$39.99",price:"$25",categoryLabel:"Randoms",categories:["new","randoms"],status:"Available",image:""},
   {brand:"T&G",product:"TG-117 Portable Wireless Speaker",description:"Portable wireless speaker. Various colors. 6 available.",size:"N/A",retail:"$29.99",price:"$25",categoryLabel:"Randoms",categories:["new","randoms"],status:"Available",image:""},
   {brand:"CORRUPTED CREATIVE",product:"Capsule 4 Shorts",description:"Color: Various. Sizes: Various.",size:"Various",retail:"$189.99",price:"$50",categoryLabel:"Apparel",categories:["new","apparel"],status:"Available",image:""},
   {brand:"CHAMPION",product:"Temple Owls Black Logo Hoodie",description:"Black Champion pullover hoodie featuring a large white Temple University T logo, kangaroo pocket and drawstring hood. New with tags.",size:"Medium (M)",retail:"$52",price:"$30",categoryLabel:"Apparel",categories:["new","apparel"],status:"Available",image:""},
