@@ -7,8 +7,8 @@
     size: "Size shown on packaging / inquire",
     retail: "$36.24",
     price: "$30",
-    categoryLabel: "Randoms / Slides",
-    categories: ["new","randoms"],
+    categoryLabel: "Footwear",
+    categories: ["new","footwear"],
     status: "1 Available",
     image: "",
     description: "Blue and gold Mamba Out tribute slides featuring the 8, 24 and 2 memorial design. New in sealed packaging."
