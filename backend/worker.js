@@ -52,10 +52,10 @@ export default {async fetch(request,env){
  const created=await airtable(env,SALES,'',{method:'POST',body:JSON.stringify({fields:{'Order ID':orderId,Status:'Processing','Payment Method':input.paymentMethod,Total:total/100,'Items JSON':JSON.stringify(lines.map(({id,name,price,qty})=>({id,name,price,qty}))), 'Idempotency Key':key,'Created At':new Date().toISOString()}})});
  try{
  for(const p of lines){
- await airtable(env,PRODUCTS+'/'+p.id,{method:'PATCH',body:JSON.stringify({fields:{'Inventory On Hand — PRIVATE':p.onHand-p.qty,'Units Sold — PRIVATE':p.sold+p.qty}})});
+ await airtable(env,PRODUCTS+'/'+p.id,'',{method:'PATCH',body:JSON.stringify({fields:{'Inventory On Hand — PRIVATE':p.onHand-p.qty,'Units Sold — PRIVATE':p.sold+p.qty}})});
  await airtable(env,MOVEMENTS,'',{method:'POST',body:JSON.stringify({fields:{Movement:orderId+' '+p.name,'Product / Variant':p.name,'Quantity Change':-p.qty,Date:new Date().toISOString(),'Reference / Order':orderId,Notes:'QR checkout · '+input.paymentMethod}})});
  }
- await airtable(env,SALES+'/'+created.id,{method:'PATCH',body:JSON.stringify({fields:{Status:'Completed'}})});
+ await airtable(env,SALES+'/'+created.id,'',{method:'PATCH',body:JSON.stringify({fields:{Status:'Completed'}})});
  return json({orderId},200,cors);
  }catch(e){
  await airtable(env,SALES+'/'+created.id,{method:'PATCH',body:JSON.stringify({fields:{Status:'Failed',Notes:'RECONCILE MANUALLY: possible partial stock or movement updates. '+String(e.message).slice(0,350)}})}).catch(()=>{});
