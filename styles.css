@@ -23,3 +23,12 @@
 .vault-rule{color:#d5b36b;margin:1.2rem auto;font-size:1.3rem}
 .vault-description{max-width:550px;margin:1rem auto 2rem!important;color:#d8cdbb!important;line-height:1.8}
 @media(max-width:580px){.nubz-vault{padding:3rem .8rem}.vault-frame{padding:3rem 1.1rem}.vault-overline,.vault-footnote{letter-spacing:.15em}.vault-title strong{letter-spacing:.06em}}
+
+.vault-feature{margin:2.8rem auto;max-width:800px;border:1px solid #b38c4b;background:linear-gradient(140deg,#191510,#090909);padding:1.3rem;text-align:left;box-shadow:0 16px 50px rgba(0,0,0,.35)}
+.vault-feature-label{color:#d8b572!important;font:.65rem Montserrat,sans-serif;letter-spacing:.22em;text-align:center;margin:0 0 1.2rem!important}
+.vault-feature-layout{display:grid;grid-template-columns:1fr 1.25fr;gap:1.5rem;align-items:center}
+.vault-feature-art{min-height:290px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;border:1px solid #6e5229;background:linear-gradient(120deg,#e44e11 0%,#16100e 48%,#49117c 100%)}
+.vault-feature-monogram{font:600 5rem "Cormorant Garamond",serif;color:#ffe1a3;text-shadow:0 4px 20px #000}
+.vault-feature-monogram span{font-size:2rem;vertical-align:top}.vault-feature-art p{font-weight:600;letter-spacing:.12em;color:white!important}.vault-feature-art small{font-size:.6rem;color:#ebd3a7;letter-spacing:.12em}
+.vault-feature-info h3{font:600 clamp(1.8rem,3vw,2.7rem) "Cormorant Garamond",serif;color:#f0ce8d;margin:.2rem 0}.vault-feature-subtitle{color:#caa56a!important;font-size:.75rem;letter-spacing:.08em}.vault-feature-info ul{padding-left:1.2rem;line-height:1.9;color:#e6dccb;font-size:.85rem}.vault-feature-note{font-size:.73rem;color:#b9ac97!important;line-height:1.7}.vault-feature-price{display:block;color:#e9c47a;letter-spacing:.12em;margin:1rem 0}.vault-offer-note{color:#c4b69e!important;font-size:.7rem;margin:.8rem 0 1.2rem!important}
+@media(max-width:650px){.vault-feature-layout{grid-template-columns:1fr}.vault-feature-art{min-height:230px}.vault-feature{padding:1rem}}
