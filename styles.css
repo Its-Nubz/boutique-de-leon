@@ -32,3 +32,5 @@
 .vault-feature-monogram span{font-size:2rem;vertical-align:top}.vault-feature-art p{font-weight:600;letter-spacing:.12em;color:white!important}.vault-feature-art small{font-size:.6rem;color:#ebd3a7;letter-spacing:.12em}
 .vault-feature-info h3{font:600 clamp(1.8rem,3vw,2.7rem) "Cormorant Garamond",serif;color:#f0ce8d;margin:.2rem 0}.vault-feature-subtitle{color:#caa56a!important;font-size:.75rem;letter-spacing:.08em}.vault-feature-info ul{padding-left:1.2rem;line-height:1.9;color:#e6dccb;font-size:.85rem}.vault-feature-note{font-size:.73rem;color:#b9ac97!important;line-height:1.7}.vault-feature-price{display:block;color:#e9c47a;letter-spacing:.12em;margin:1rem 0}.vault-offer-note{color:#c4b69e!important;font-size:.7rem;margin:.8rem 0 1.2rem!important}
 @media(max-width:650px){.vault-feature-layout{grid-template-columns:1fr}.vault-feature-art{min-height:230px}.vault-feature{padding:1rem}}
+
+.vault-pokemon-art{background:linear-gradient(125deg,#f2b84a 0%,#6940aa 48%,#141029 100%)}.vault-pokemon-art .vault-feature-monogram{color:#fff1c3;text-shadow:0 3px 18px #38206a}
