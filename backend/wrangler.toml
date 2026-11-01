@@ -1,0 +1,13 @@
+name = "boutique-de-leon-checkout"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+
+# Set ALLOWED_ORIGIN to the exact origin of the deployed checkout page.
+# Set ACCESS_TEAM_DOMAIN and ACCESS_AUD using your Cloudflare Access application.
+# Set AIRTABLE_TOKEN with: npx wrangler secret put AIRTABLE_TOKEN
+# Never commit credentials to this repository.
+
+[vars]
+ALLOWED_ORIGIN = "https://its-nubz.github.io"
+# ACCESS_TEAM_DOMAIN = "your-team.cloudflareaccess.com"
+# ACCESS_AUD = "your-access-app-audience-tag"
