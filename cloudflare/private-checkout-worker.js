@@ -28,6 +28,14 @@ export default {
     const rec=await airtable(env,PRODUCTS,"GET","/"+id);
     return json({id:rec.id,product:rec.fields.Product,variant:rec.fields["Size / Variant"],price:rec.fields["Boutique Price"],available:rec.fields["Inventory On Hand — PRIVATE"]});
    }
+   if(request.method==="GET" && url.pathname==="/inventory") {
+    const data=await airtable(env,PRODUCTS,"GET","?pageSize=100");
+    return json({products:data.records.map(r=>({id:r.id,product:r.fields["Product"],variant:r.fields["Size / Variant"],price:r.fields["Boutique Price"],available:r.fields["Inventory On Hand — PRIVATE"]})) ,nextOffset:data.offset||null});
+   }
+   if(request.method==="GET" && url.pathname==="/sales") {
+    const data=await airtable(env,SALES,"GET","?pageSize=100");
+    return json({sales:data.records.map(r=>({id:r.id,orderId:r.fields["Order ID"],status:r.fields["Status"],total:r.fields["Total"],paymentMethod:r.fields["Payment Method"]})),nextOffset:data.offset||null});
+   }
    // Deliberately no sale-write endpoint until atomicity, authorization and
    // payment confirmation workflow have been validated. Avoid stock corruption.
    return json({error:"Not found"},404);
